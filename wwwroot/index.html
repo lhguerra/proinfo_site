@@ -1,537 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		
-			<!-- styles needed by jScrollPane -->
-			<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-			
-			<!-- latest jQuery direct from google's CDN -->
-			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
-			</script>
-			
-			<!-- the mousewheel plugin - optional to provide mousewheel support -->
-			<!-- <script type="text/javascript" src="js/jquery.mousewheel.js"></script> -->
-			
-			<!-- the jScrollPane script -->
-			<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		
-		<!-- fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
+	<title>HTML</title>
 
-		<title>HTML</title>
-		<meta name="description" content="" />
-		<meta name="author" content="IntermediarioNovo02" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
+	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+	.edgeLoad-EDGE-21288881 { visibility: hidden; }
+	</style>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="plac_pnc_edgePreload.js"></script>
+</head>
+<body>
+	<div>
+		<aside>
+			<div id="logo">
+				<img src="images/logo.png" />
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a class="scroll scroll-current" href="#inicio" data-normal="HOME" data-active="PÁGINA INICIAL">PÁGINA INICIAL</a>
+					</li>
+					<li>
+						<a class="scroll" href="#o-que-e" data-normal="O QUE É?" data-active="CONHEÇA O CURSO">O QUE É?</a>
+					</li>
+					<li>
+						<a class="scroll" href="#como-funciona" data-normal="COMO FUNCIONA?" data-active="DINÂMICA DO CURSO">COMO FUNCIONA?</a>
+					</li>
+					<li>
+						<a class="scroll" href="#como-estudar" data-normal="COMO ESTUDAR EAD?" data-active="DESAFIOS E PRÁTICAS">COMO ESTUDAR EAD?</a>
+					</li>
+					<li>
+						<a class="scroll" href="#quer-saber-mais" data-normal="QUER SABER MAIS?" data-active="DOCUMENTOS E GUIAS">QUER SABER MAIS?</a>
+					</li>
+					<li>
+						<a class="scroll" href="#contato" data-normal="CONTATO" data-active="FALE CONOSCO">CONTATO</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="aside-footer">
+				<h4>Acompanhe o Projeto:</h4>
+				<ul>
+					<li>
+						<a href="https://twitter.com/EAD_CultDigital" target="_new"><img src="images/twitter.png" /></a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/ProjetoEducacaoNaCulturaDigital" target="_new"><img src="images/facebook.png" /></a>
+					</li>
+					<li>
+						<a href="http://e-proinfo.mec.gov.br/eproinfo/blog/projeto_educacao_cultura_digital" target="_new"><img src="images/rss.png" /></a>
+					</li>
+				</ul>
+			</div>
+		</aside>
 
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		
-			<!-- jQuery library (served from Google) -->
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-			<!-- bxSlider Javascript file -->
-			<script src="js/jquery.bxslider.min.js"></script>
-			<!-- bxSlider CSS file -->
-			<link href="css/jquery.bxslider.css" rel="stylesheet" />
-		
-		<!-- o que é . classes -->
-		<script>
-			$(function () {
-			    var menuproposta = $('#menuproposta'),
-			        menumetodologia = $('#menumetodologia'),
-			        menuinscricao = $('#menuinscricao'),
-			        menuestrutura = $('#menuestrutura'),
-			        menuimplementacao = $('#menuimplementacao');
-			
-			    menuproposta.bind('click', function () {
-			    	$( "#proposta" ).removeClass( "show" ),
-			    	$( ".proposta" ).addClass( "display" ),
-			    	
-			        $( "#metodologia" ).addClass( "show" ),
-			        $( ".metodologia" ).removeClass( "display" ),
-			        
-			        $( "#inscricao" ).addClass( "show" ),
-			        $( ".inscricao" ).removeClass( "display" ),
-			        
-			        $( "#estrutura" ).addClass( "show" ),
-			        $( ".estrutura" ).removeClass( "display" ),
-			        
-			        $( "#implementacao" ).addClass( "show" ),
-			        $( ".implementacao" ).removeClass( "display" );
-			    });
-			    
-			    menumetodologia.bind('click', function () {
-			    	$( "#proposta" ).addClass( "show" ),
-			    	$( ".proposta" ).removeClass( "display" ),
-			    	
-			    	$( "#metodologia" ).removeClass( "show" ),
-			        $( ".metodologia" ).addClass( "display" ),
-			        
-			        $( "#inscricao" ).addClass( "show" ),
-			        $( ".inscricao" ).removeClass( "display" ),
-			        
-			        $( "#estrutura" ).addClass( "show" ),
-			        $( ".estrutura" ).removeClass( "display" ),
-			        
-			        $( "#implementacao" ).addClass( "show" ),
-			        $( ".implementacao" ).removeClass( "display" );
-			    });
-			    
-			    menuinscricao.bind('click', function () {
-			    	$( "#proposta" ).addClass( "show" ),
-			    	$( ".proposta" ).removeClass( "display" ),
-			    	
-			    	$( "#metodologia" ).addClass( "show" ),
-			        $( ".metodologia" ).removeClass( "display" ),
-			        
-			        $( "#inscricao" ).removeClass( "show" ),
-			        $( ".inscricao" ).addClass( "display" ),
-			        
-			        $( "#estrutura" ).addClass( "show" ),
-			        $( ".estrutura" ).removeClass( "display" ),
-			        
-			        $( "#implementacao" ).addClass( "show" ),
-			        $( ".implementacao" ).removeClass( "display" );
-			    });
-			    
-			    menuestrutura.bind('click', function () {
-			    	$( "#proposta" ).addClass( "show" ),
-			    	$( ".proposta" ).removeClass( "display" ),
-			    	
-			    	$( "#metodologia" ).addClass( "show" ),
-			        $( ".metodologia" ).removeClass( "display" ),
-			        
-			        $( "#inscricao" ).addClass( "show" ),
-			        $( ".inscricao" ).removeClass( "display" ),
-			        
-			        $( "#estrutura" ).removeClass( "show" ),
-			        $( ".estrutura" ).addClass( "display" ),
-			        
-			        $( "#implementacao" ).addClass( "show" ),
-			        $( ".implementacao" ).removeClass( "display" );
-			    });
-			    
-			    menuimplementacao.bind('click', function () {
-			    	$( "#proposta" ).addClass( "show" ),
-			    	$( ".proposta" ).removeClass( "display" ),
-			    	
-			    	$( "#metodologia" ).addClass( "show" ),
-			        $( ".metodologia" ).removeClass( "display" ),
-			        
-			        $( "#inscricao" ).addClass( "show" ),
-			        $( ".inscricao" ).removeClass( "display" ),
-			        
-			        $( "#estrutura" ).addClass( "show" ),
-			        $( ".estrutura" ).removeClass( "display" ),
-			        
-			        $( "#implementacao" ).removeClass( "show" ),
-			        $( ".implementacao" ).addClass( "display" );
-			    });
-			});
-		</script>
-		
-		<!-- menu -->
-		<script>
-			jQuery(document).ready(function($) {
-			
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-					$('.scroll-current').each(function(){
-						$(this).removeClass('scroll-current');
-						$(this).text($(this).attr('data-normal'));
-					});
-					$(this).addClass('scroll-current');
-					$(this).text($(this).attr('data-active'));
-				});
-				
-			});
-		</script>
-		
-		<!-- scrollPane -->
-		<script>
-			$(document).ready(function(){
-				$('.scroll-pane').jScrollPane();
-			});
-			
-			$(window).resize(function(){
-				$('.scroll-pane').jScrollPane();
-			});
-		</script>
-		
-		<!-- bxSlider -->
-		<script>
-			$(document).ready(function(){
-			  $('.bxslider').bxSlider({
-			  auto: true,
-			  speed: 1000,
-			  pause: 12000
-			});
-			});
-			
-			$(window).resize(function(){
-			  $('.bxslider').bxSlider();
-			});
-		</script>
-	
-	<!--Adobe Edge Runtime-->
-    <script type="text/javascript" charset="utf-8" src="plac_pnc_edgePreload.js"></script>
-    <style>
-        .edgeLoad-EDGE-21288881 { visibility: hidden; }
-    </style>
-	
-	</head>
-
-	<body>
-		<div>
-			<aside>
-				<div id="logo">
-					<img src="images/logo.png" />
-				</div>
-				<nav>
-					<ul>
-						<li>
-							<a class="scroll" href="#inicio" data-normal="HOME" data-active="PÁGINA INICIAL">HOME</a>						
-						</li>
-						<li>
-							<a class="scroll" href="#o-que-e" data-normal="O QUE É?" data-active="CONHEÇA O CURSO">O QUE É?</a>							
-						</li>
-						<li>
-							<a class="scroll" href="#como-funciona" data-normal="COMO FUNCIONA?" data-active="DINÂMICA DO CURSO">COMO FUNCIONA?</a>							
-						</li>
-						<li>
-							<a class="scroll" href="#como-estudar" data-normal="COMO ESTUDAR EAD?" data-active="DESAFIOS E PRÁTICAS">COMO ESTUDAR EAD?</a>							
-						</li>
-						<li>
-							<a class="scroll" href="#quer-saber-mais" data-normal="QUER SABER MAIS?" data-active="DOCUMENTOS E GUIAS">QUER SABER MAIS?</a>							
-						</li>
-						<li>
-							<a class="scroll" href="#contato" data-normal="CONTATO" data-active="FALE CONOSCO">CONTATO</a>
-						</li>
-					</ul>
-				</nav>
-				<div id="aside-footer">
-					<h4>Acompanhe o Projeto:</h4>
-					<ul>
-						<li>
-							<a href="https://twitter.com/EAD_CultDigital"><img src="images/twitter.png" /></a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/ProjetoEducacaoNaCulturaDigital"><img src="images/facebook.png" /></a>
-						</li>
-						<li>
-							<a href="http://e-proinfo.mec.gov.br/eproinfo/blog/projeto_educacao_cultura_digital"><img src="images/rss.png" /></a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-			
-			<section id="inicio">
-				<header>
-					<ul class="bxslider">
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Construir, criar, inventar, experimentar, comunicar, cooperar, ajudar, aprender, essas são as palavras de ordem para a mudança. Todas são verbos indicadores de ações, de movimento, de avanço. A escola precisa movimentar-se para integrar-se à cultura digital, formando uma amálgama inseparável, que dá lugar aos indivíduos e suas ações.
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Todas as revoluções da história do homem ocorreram associadas ao surgimento de ferramentas que expandiram de forma significativa a sua capacidade de manipulação sobre o mundo (realidade), ou, que expandiram a sua capacidade de comunicação e de expressão." 
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As oportunidades diante de nós, individual ou coletivamente, são gigantescas. O que fazemos com elas será determinado em grande parte pela forma como somos capazes de imaginar e recompensar a criatividade pública, a participação e o compartilhamento.” 
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A ferramenta é convivencial à medida que cada um puder utilizá-la sem dificuldade, tão amiúde ou tão raramente quanto deseje, para os fins que o próprio determine ... Entre o homem e o mundo, ela é um condutor de sentido, um tradutor de intencionalidade.”
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A exploração não dirigida pode ser um excelente caminho de descoberta ou de personalização dos modos de buscar e organizar o conhecimento. Por exemplo, ao solicitar que as pessoas explorem um programa, permite-se que elas descubram algo, experimentem e avancem até onde se sentirem satisfeitas.” 
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A tecnologia continuará a melhorar, assim como a população continuará a crescer, mas a mudança em direção a uma maior participação já aconteceu. O mais importante agora é a nossa imaginação.” 
-						</li>
-						<li>
-							<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; É uma responsabilidade e tanto e ao mesmo tempo uma grande oportunidade para nos aproximar do sonho de levar nossas escolas a protagonizar a construção da Cultura Digital que desejamos, a cultura do compartilhamento, da interação, da solidariedade.” 
-						</li>
-					</ul>
-				</header>
-				<article>
-					<h1>
-						Educação na Cultura Digital
-					</h1>
-					<p>
-						No processo dinâmico do mundo, conhecimento pode mudar sua vida. Para enfrentar os novos desafios, o curso “Especialização em Educação na Cultura Digital” propõe uma mudança nas formas de ensinar e de aprender. Você já imaginou utilizar tecnologias digitais na escola?
-					</p>
-					<a class="scroll" href="#o-que-e">
-						ENTENDA UM POUCO MAIS
-					</a>
-				</article>
-			</section>
-			
-			<section id="o-que-e">
-				<header>
-					<h1>O QUE É <span>| Conheça o curso</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						<p>
-							O curso “Especialização em Educação na Cultura Digital” quer se constituir num diálogo ativo para buscar mudanças de paradigma na educação. O curso oferecerá uma formação apoiada no compartilhamento de experiências que exploram, demonstram e analisam as possibilidades criativas da integração das TDIC (Tecnologias Digitais de Informação e Comunicação) aos currículos escolares.
-						</p>
-						<br />
-						<p>
-							Assista aos vídeos e entenda melhor o curso:
-						</p>
-						<ul id="oqueemenu">
-							<li>
-								<a id="menuproposta" class="show" href="#/">PROPOSTA</a>
-							</li>
-							<li>
-								<a id="menumetodologia" class="show" href="#/">METODOLOGIA</a>
-							</li>
-							<li>
-								<a id="menuinscricao" class="show" href="#/">INSCRIÇÃO</a>
-							</li>
-							<li>
-								<a id="menuestrutura" class="show" href="#/">ESTRUTURA</a>
-							</li>
-							<li>
-								<a id="menuimplementacao" class="show" href="#/">IMPLEMENTAÇÃO</a>
-							</li>
-						</ul>
-						<iframe class="proposta display" height="300" src="http://www.youtube.com/embed/rnKzU92fOBY" frameborder="0" allowfullscreen></iframe>
-						
-						<iframe class="metodologia" height="300" src="http://www.youtube.com/embed/JfaVGAp7m3E" frameborder="0" allowfullscreen></iframe>
-							
-						<iframe class="inscricao" height="300" src="http://www.youtube.com/embed/Vj_fR6ILtE0" frameborder="0" allowfullscreen></iframe>
-							
-						<iframe class="estrutura" height="300" src="http://www.youtube.com/embed/bM6ypJGX-aA" frameborder="0" allowfullscreen></iframe>
-							
-						<iframe class="implementacao" height="300" src="http://www.youtube.com/embed/xGY8jVGTQvM" frameborder="0" allowfullscreen></iframe>
-							
-					</article>
-					
-					<div id="proposta" class="bb">
-						<div class="box">
-							<div>
-								<h3 class="lsf-icon" title="plus">Qual é o plano?</h3>
-								<div class="box-wrapper">
-									<p>
-										Propõe-se uma formação ancorada nas experiências e nas trocas entre professores. Isso se dará por meio de atividades práticas de uso das Tecnologias Digitais de Informação e Comunicação (TDIC) com os estudantes e de atividades que serão acompanhadas desde o planejamento, execução até a avaliação.
-									</p>
-								</div>
-							</div>
-							<div class="over">
-								<h3 class="lsf-icon" title="plus">Construção do Curso:</h3>
-								<div class="box-wrapper scroll-pane">
-									<p>
-										A autoria dos materiais didáticos do curso está se dando por meio de um processo inovador. Os materiais estão sendo desenvolvidos, desde a sua criação, de forma coletiva e colaborativa. 
-										As equipes que estão construindo o curso se embasam em um modelo de gestão onde cada equipe assume a corresponsabilidade pelos processos de produção. O trabalho é fundamentado no diálogo e na organização partilhada por meio da interlocução contínua entre as equipes de Gestão, Designers Educacionais, Produção de Hipermídia, Vídeo e de Autores. As equipes são multidisciplinares, possibilitando um repertório variado para criação. Assim, os materiais didáticos e as atividades propostas para o conteúdo utilizam os mais diversos recursos das TDIC.
-										A gestão desse grupo grande e multidisciplinar fundamenta-se na formação constante da equipe, baseada na avaliação contínua dos materiais produzidos, assim como na preocupação em melhorar a criação e o compartilhamento do conhecimento.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id="metodologia" class="bb">
-						<div class="box">
-							<div>
-								<h3 class="lsf-icon" title="plus">Como?</h3>
-								<div class="box-wrapper scroll-pane">
-									<p>
-										A metodologia do curso une a ideia de formação continuada com flexibilidade, possibilitando a organização de ciclos de formação, propiciando a cada escola que escolha o seu percurso. Dessa forma, a escola ganha autonomia e se constitui como unidade formadora, oferecendo suporte à prática coletiva.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id="inscricao" class="bb">
-						<div class="box">
-							<div>
-								<h3 class="lsf-icon" title="plus">Para quem?</h3>
-								<div class="box-wrapper">
-									<p>
-										O curso “Especialização em Educação na Cultura Digital” oferecerá uma formação dirigida ao coletivo da escola. O coletivo será composto por professores, profissionais de apoio e gestores locais.
-									</p>
-								</div>
-							</div>
-							<div class="over">
-								<h3 class="lsf-icon" title="plus">Como Participar?</h3>
-								<div id="como-participar" class="box-wrapper scroll-pane">
-									<p>
-										A seleção dos cursistas demanda um processo em acordo aos princípios seguidos pelas Universidades brasileiras. As inscrições no curso, atendendo às condições expressas nos editais de seleção, serão aceitas para educadores ligados a unidades escolares. 
-										Cada Universidade irá definir os critérios de seleção por meio de um edital realizado e publicado em cada Instituição de Ensino. 
-										Publicado o edital, os Gestores dos Núcleos de Tecnologia realizam a pré-inscrição dos seus multiplicadores no Sistema de Gerenciamento de Cursos Digitais (SGCD), desenvolvido pelo MEC, que estará integrado aos dados do Censo Escolar. Para ter mais informações a respeito, acesse o <a href="#">site</a>.
-										De posse dos dados e das informações dos multiplicadores e professores candidatos, as Universidades dão andamento ao processo seletivo, podendo exigir outras informações e documentos, em acordo com o seu edital de inscrição.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id="estrutura" class="bb">
-						<div class="box">
-							<div>
-								<h3 class="lsf-icon" title="plus">Mais Informações:</h3>
-								<div class="box-wrapper scroll-pane">
-									<p>
-										A proposta é de uma arquitetura pedagógica organizada em núcleos de estudo modulares, podendo ser cursados de diferentes formas. Assim,  permite-se que cada escola faça seu próprio projeto de formação, atendendo ao perfil do coletivo e também de cada profissional individualmente. Para entender melhor a estrutura, saiba mais em: <a href="#como-funciona">COMO FUNCIONA?</a> 
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id="implementacao" class="bb">
-						<div class="box">
-							<div>
-								<h3 class="lsf-icon" title="plus">Como funciona?</h3>
-								<div class="box-wrapper scroll-pane">
-									<p>
-										Com o objetivo de formar educadores para integrar de forma crítica e criativa as TDIC aos currículos escolares, o curso de Especialização em Educação na Cultura Digital estruturou a formação em três componentes principais: o Plano de Ação Coletivo, os Núcleos de Estudo e o Trabalho de Conclusão de Curso.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section id="como-funciona">
-				<header>
-					<h1>COMO FUNCIONA <span>| Dinâmica do Curso</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						<p>
-							O Plano de Ação Coletivo (PLAC) é a espinha dorsal da proposta metodológica deste Curso, suas atividades têm o propósito de apontar caminhos metodológicos e teóricos, trazendo essa vivência como elemento primordial da sua formação.
-						</p><br />
-						<p>
-							Os Núcleos de Estudo propiciarão a problematização e a reflexão do cotidiano da escola, sendo o seu maior diferencial a inclusão da discussão a respeito da integração das TDIC ao ensino das disciplinas e de seus conteúdos específicos. Os núcleos compreendem: Núcleos de Base – focarão nos aspectos teórico-conceituais que nortearão a concepção do curso analisando o papel da escola na cultura digital.
-						</p>
-						<div id="Stage" class="EDGE-21288881">
-						</div>
-					</article>
-				</div>
-				
-				<div class="side-img" style="background-image: url('images/como-funciona.jpg'); z-index: 50;">
-					
-				</div>
-			</section>
-			
-			<section id="como-estudar">
-				<header>
-					<h1>COMO ESTUDAR EAD <span>| Desafios e práticas</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						<img src="images/em construção 2-01.png" />
-					</article>
-				</div>
-			</section>
-			
-			<section id="quer-saber-mais">
-				<header>
-					<h1>QUER SABER MAIS <span>| Documentos e Guias</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						<p>
-							Para entender melhor o Curso, você pode baixar os documentos que o fundamentam. Aqui você encontra: 
-						</p><br />
-						<p>
-							<strong>Guia de Base:</strong> apresenta o modelo pedagógico do curso.
-						</p>
-						<p>
-							<strong>Guia de Diretrizes Metodológicas:</strong> apresenta o detalhamento da metodologia do Curso.
-						</p>
-						<p>
-							<strong>Guia de Autoria:</strong> apresenta a coesão desejada para a construção compartilhada dos materiais didáticos.
-						</p>
-						<p>
-							<strong>Guia de Implantação:</strong> apresenta a implantação e o desenvolvimento do curso nas instituições envolvidas.
-						</p>
-						<br />
-						<p>
-							Aproveite a leitura!
-						</p>
-						<ul>
-							<li>
-								<img src="images/implantacao.jpg" /><br />
-								<a href="#download" class="lsf-icon" title="save">Download</a>
-							</li>
-							<li>
-								<img src="images/diretrizes.jpg" /><br />
-								<a href="#download" class="lsf-icon" title="save">Download</a>
-							</li>
-							<li>
-								<img src="images/base.jpg" /><br />
-								<a href="#download" class="lsf-icon" title="save">Download</a>
-							</li>
-							<li>
-								<img src="images/autoria.jpg" /><br />
-								<a href="#download" class="lsf-icon" title="save">Download</a>
-							</li>
-						</ul>
-					</article>
-				</div>
-			</section>
-			
-			<section id="contato">
-				<header>
-					<h1>CONTATO <span>| Fale Conosco</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						<h2>ENVIAR MENSAGEM <span>| Escreva suas dúvidas que responderemos em breve</h2>
-						<table>
-							<tr>
-								<td>
-									<h3>Nome:</h3>
-									<input type="text" placeholder="Digite seu nome" />
-								</td>
-								<td>
-									<h3>E-mail:</h3>
-									<input type="email" placeholder="Digite seu e-mail" />
-								</td>
-							</tr>
-							<tr>
-								<td colspan="2">
-									<h3>Mensagem:</h3>
-									<textarea rows="4" cols="50" placeholder="Escreva aqui sua mensagem"></textarea>
-								</td>
-							</tr>
-						</table>
-					</article>
-				</div>
-			</section>
-			
-			<section id="creditos">
-				<header>
-					<h1>CONHEÇA A EQUIPE <span>| Créditos</h1>
-				</header>
-				<div class="section-wrapper">
-					<article>
-						
-					</article>
-				</div>
-			</section>
-
-			<footer>
-				<h4>Realização:</h4>
-				<img src="images/mec.png" />
-				<a class="scroll" href="#creditos">
-					<img src="images/equipe.png" />
-					<p>Conheça a Equipe</p>
+		<section id="inicio">
+			<header>
+				<ul class="bxslider">
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Construir, criar, inventar, experimentar, comunicar, cooperar, ajudar, aprender, essas são as palavras de ordem para a mudança. Todas são verbos indicadores de ações, de movimento, de avanço. A escola precisa movimentar-se para integrar-se à cultura digital, formando uma amálgama inseparável, que dá lugar aos indivíduos e suas ações.
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Todas as revoluções da história do homem ocorreram associadas ao surgimento de ferramentas que expandiram de forma significativa a sua capacidade de manipulação sobre o mundo (realidade), ou, que expandiram a sua capacidade de comunicação e de expressão."
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As oportunidades diante de nós, individual ou coletivamente, são gigantescas. O que fazemos com elas será determinado em grande parte pela forma como somos capazes de imaginar e recompensar a criatividade pública, a participação e o compartilhamento.”
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A ferramenta é convivencial à medida que cada um puder utilizá-la sem dificuldade, tão amiúde ou tão raramente quanto deseje, para os fins que o próprio determine ... Entre o homem e o mundo, ela é um condutor de sentido, um tradutor de intencionalidade.”
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A exploração não dirigida pode ser um excelente caminho de descoberta ou de personalização dos modos de buscar e organizar o conhecimento. Por exemplo, ao solicitar que as pessoas explorem um programa, permite-se que elas descubram algo, experimentem e avancem até onde se sentirem satisfeitas.”
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A tecnologia continuará a melhorar, assim como a população continuará a crescer, mas a mudança em direção a uma maior participação já aconteceu. O mais importante agora é a nossa imaginação.”
+					</li>
+					<li>
+						<img class="quotee" src="images/quotee.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; É uma responsabilidade e tanto e ao mesmo tempo uma grande oportunidade para nos aproximar do sonho de levar nossas escolas a protagonizar a construção da Cultura Digital que desejamos, a cultura do compartilhamento, da interação, da solidariedade.”
+					</li>
+				</ul>
+			</header>
+			<article>
+				<h1>
+					Educação na Cultura Digital
+				</h1>
+				<p>
+					No processo dinâmico do mundo, conhecimento pode mudar sua vida. Para enfrentar os novos desafios, o curso “Especialização em Educação na Cultura Digital” propõe uma mudança nas formas de ensinar e de aprender. Você já imaginou utilizar tecnologias digitais na escola?
+				</p>
+				<a class="scroll" href="#o-que-e">
+					ENTENDA UM POUCO MAIS
 				</a>
-			</footer>
-		</div>
-	</body>
+			</article>
+		</section>
+
+		<section id="o-que-e">
+			<header>
+				<h1>O QUE É <span>| Conheça o curso</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+					<p>
+						O curso “Especialização em Educação na Cultura Digital” quer se constituir num diálogo ativo para buscar mudanças de paradigma na educação. O curso oferecerá uma formação apoiada no compartilhamento de experiências que exploram, demonstram e analisam as possibilidades criativas da integração das TDIC (Tecnologias Digitais de Informação e Comunicação) aos currículos escolares.
+					</p>
+					<br />
+					<p>
+						Assista aos vídeos e entenda melhor o curso:
+					</p>
+					<ul id="oqueemenu">
+						<li>
+							<a id="menuproposta" class="show" href="#/">PROPOSTA</a>
+						</li>
+						<li>
+							<a id="menumetodologia" class="show" href="#/">METODOLOGIA</a>
+						</li>
+						<li>
+							<a id="menuinscricao" class="show" href="#/">INSCRIÇÃO</a>
+						</li>
+						<li>
+							<a id="menuestrutura" class="show" href="#/">ESTRUTURA</a>
+						</li>
+						<li>
+							<a id="menuimplementacao" class="show" href="#/">IMPLEMENTAÇÃO</a>
+						</li>
+					</ul>
+					<iframe class="proposta display" height="300" src="http://www.youtube.com/embed/rnKzU92fOBY" frameborder="0" allowfullscreen></iframe>
+
+					<iframe class="metodologia" height="300" src="http://www.youtube.com/embed/JfaVGAp7m3E" frameborder="0" allowfullscreen></iframe>
+
+					<iframe class="inscricao" height="300" src="http://www.youtube.com/embed/Vj_fR6ILtE0" frameborder="0" allowfullscreen></iframe>
+
+					<iframe class="estrutura" height="300" src="http://www.youtube.com/embed/bM6ypJGX-aA" frameborder="0" allowfullscreen></iframe>
+
+					<iframe class="implementacao" height="300" src="http://www.youtube.com/embed/xGY8jVGTQvM" frameborder="0" allowfullscreen></iframe>
+
+				</article>
+
+				<div id="proposta" class="bb">
+					<div class="box">
+						<div>
+							<h3 class="lsf-icon" title="plus">Qual é o plano?</h3>
+							<div class="box-wrapper">
+								<p>
+									Propõe-se uma formação ancorada nas experiências e nas trocas entre professores. Isso se dará por meio de atividades práticas de uso das Tecnologias Digitais de Informação e Comunicação (TDIC) com os estudantes e de atividades que serão acompanhadas desde o planejamento, execução até a avaliação.
+								</p>
+							</div>
+						</div>
+						<div class="over">
+							<h3 class="lsf-icon" title="plus">Construção do Curso:</h3>
+							<div class="box-wrapper scroll-pane">
+								<p>
+									A autoria dos materiais didáticos do curso está se dando por meio de um processo inovador. Os materiais estão sendo desenvolvidos, desde a sua criação, de forma coletiva e colaborativa.
+									As equipes que estão construindo o curso se embasam em um modelo de gestão onde cada equipe assume a corresponsabilidade pelos processos de produção. O trabalho é fundamentado no diálogo e na organização partilhada por meio da interlocução contínua entre as equipes de Gestão, Designers Educacionais, Produção de Hipermídia, Vídeo e de Autores. As equipes são multidisciplinares, possibilitando um repertório variado para criação. Assim, os materiais didáticos e as atividades propostas para o conteúdo utilizam os mais diversos recursos das TDIC.
+									A gestão desse grupo grande e multidisciplinar fundamenta-se na formação constante da equipe, baseada na avaliação contínua dos materiais produzidos, assim como na preocupação em melhorar a criação e o compartilhamento do conhecimento.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="metodologia" class="bb">
+					<div class="box">
+						<div>
+							<h3 class="lsf-icon" title="plus">Como?</h3>
+							<div class="box-wrapper scroll-pane">
+								<p>
+									A metodologia do curso une a ideia de formação continuada com flexibilidade, possibilitando a organização de ciclos de formação, propiciando a cada escola que escolha o seu percurso. Dessa forma, a escola ganha autonomia e se constitui como unidade formadora, oferecendo suporte à prática coletiva.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="inscricao" class="bb">
+					<div class="box">
+						<div>
+							<h3 class="lsf-icon" title="plus">Para quem?</h3>
+							<div class="box-wrapper">
+								<p>
+									O curso “Especialização em Educação na Cultura Digital” oferecerá uma formação dirigida ao coletivo da escola. O coletivo será composto por professores, profissionais de apoio e gestores locais.
+								</p>
+							</div>
+						</div>
+						<div class="over">
+							<h3 class="lsf-icon" title="plus">Como Participar?</h3>
+							<div id="como-participar" class="box-wrapper scroll-pane">
+								<p>
+									A seleção dos cursistas demanda um processo em acordo aos princípios seguidos pelas Universidades brasileiras. As inscrições no curso, atendendo às condições expressas nos editais de seleção, serão aceitas para educadores ligados a unidades escolares.
+									Cada Universidade irá definir os critérios de seleção por meio de um edital realizado e publicado em cada Instituição de Ensino.
+									Publicado o edital, os Gestores dos Núcleos de Tecnologia realizam a pré-inscrição dos seus multiplicadores no Sistema de Gerenciamento de Cursos Digitais (SGCD), desenvolvido pelo MEC, que estará integrado aos dados do Censo Escolar. Para ter mais informações a respeito, acesse o <a href="#">site</a>.
+									De posse dos dados e das informações dos multiplicadores e professores candidatos, as Universidades dão andamento ao processo seletivo, podendo exigir outras informações e documentos, em acordo com o seu edital de inscrição.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="estrutura" class="bb">
+					<div class="box">
+						<div>
+							<h3 class="lsf-icon" title="plus">Mais Informações:</h3>
+							<div class="box-wrapper scroll-pane">
+								<p>
+									A proposta é de uma arquitetura pedagógica organizada em núcleos de estudo modulares, podendo ser cursados de diferentes formas. Assim,  permite-se que cada escola faça seu próprio projeto de formação, atendendo ao perfil do coletivo e também de cada profissional individualmente. Para entender melhor a estrutura, saiba mais em: <a href="#como-funciona">COMO FUNCIONA?</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="implementacao" class="bb">
+					<div class="box">
+						<div>
+							<h3 class="lsf-icon" title="plus">Como funciona?</h3>
+							<div class="box-wrapper scroll-pane">
+								<p>
+									Com o objetivo de formar educadores para integrar de forma crítica e criativa as TDIC aos currículos escolares, o curso de Especialização em Educação na Cultura Digital estruturou a formação em três componentes principais: o Plano de Ação Coletivo, os Núcleos de Estudo e o Trabalho de Conclusão de Curso.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="como-funciona">
+			<header>
+				<h1>COMO FUNCIONA <span>| Dinâmica do Curso</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+					<p>
+						O Plano de Ação Coletivo (PLAC) é a espinha dorsal da proposta metodológica deste Curso, suas atividades têm o propósito de apontar caminhos metodológicos e teóricos, trazendo essa vivência como elemento primordial da sua formação.
+					</p><br />
+					<p>
+						Os Núcleos de Estudo propiciarão a problematização e a reflexão do cotidiano da escola, sendo o seu maior diferencial a inclusão da discussão a respeito da integração das TDIC ao ensino das disciplinas e de seus conteúdos específicos. Os núcleos compreendem: Núcleos de Base – focarão nos aspectos teórico-conceituais que nortearão a concepção do curso analisando o papel da escola na cultura digital.
+					</p>
+					<div id="Stage" class="EDGE-21288881">
+					</div>
+				</article>
+			</div>
+
+			<div class="side-img" style="background-image: url('images/como-funciona.jpg'); z-index: 50;">
+
+			</div>
+		</section>
+
+		<section id="como-estudar">
+			<header>
+				<h1>COMO ESTUDAR EAD <span>| Desafios e práticas</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+					<img src="images/em construção 2-01.png" />
+				</article>
+			</div>
+		</section>
+
+		<section id="quer-saber-mais">
+			<header>
+				<h1>QUER SABER MAIS <span>| Documentos e Guias</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+					<p>
+						Para entender melhor o Curso, você pode baixar os documentos que o fundamentam. Aqui você encontra:
+					</p><br />
+					<p>
+						<strong>Guia de Base:</strong> apresenta o modelo pedagógico do curso.
+					</p>
+					<p>
+						<strong>Guia de Diretrizes Metodológicas:</strong> apresenta o detalhamento da metodologia do Curso.
+					</p>
+					<p>
+						<strong>Guia de Autoria:</strong> apresenta a coesão desejada para a construção compartilhada dos materiais didáticos.
+					</p>
+					<p>
+						<strong>Guia de Implantação:</strong> apresenta a implantação e o desenvolvimento do curso nas instituições envolvidas.
+					</p>
+					<br />
+					<p>
+						Aproveite a leitura!
+					</p>
+					<ul>
+						<li>
+							<img src="images/implantacao.jpg" /><br />
+							<a href="#download" class="lsf-icon" title="save">Download</a>
+						</li>
+						<li>
+							<img src="images/diretrizes.jpg" /><br />
+							<a href="#download" class="lsf-icon" title="save">Download</a>
+						</li>
+						<li>
+							<img src="images/base.jpg" /><br />
+							<a href="#download" class="lsf-icon" title="save">Download</a>
+						</li>
+						<li>
+							<img src="images/autoria.jpg" /><br />
+							<a href="#download" class="lsf-icon" title="save">Download</a>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+		<section id="contato">
+			<header>
+				<h1>CONTATO <span>| Fale Conosco</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+					<h2>ENVIAR MENSAGEM <span>| Escreva suas dúvidas que responderemos em breve</h2>
+					<table>
+						<tr>
+							<td>
+								<h3>Nome:</h3>
+								<input type="text" placeholder="Digite seu nome" />
+							</td>
+							<td>
+								<h3>E-mail:</h3>
+								<input type="email" placeholder="Digite seu e-mail" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<h3>Mensagem:</h3>
+								<textarea rows="4" cols="50" placeholder="Escreva aqui sua mensagem"></textarea>
+							</td>
+						</tr>
+					</table>
+				</article>
+			</div>
+		</section>
+
+		<section id="creditos">
+			<header>
+				<h1>CONHEÇA A EQUIPE <span>| Créditos</h1>
+			</header>
+			<div class="section-wrapper">
+				<article>
+
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<h4>Realização:</h4>
+			<img src="images/mec.png" />
+			<a class="scroll" href="#creditos">
+				<img src="images/equipe.png" />
+				<p>Conheça a Equipe</p>
+			</a>
+		</footer>
+	</div>
+</body>
 </html>

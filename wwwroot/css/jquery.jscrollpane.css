@@ -21,9 +21,9 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 10px;
+	width: 16px;
 	height: 100%;
-	background: gray;
+	background: red;
 }
 
 .jspHorizontalBar
@@ -55,17 +55,17 @@
 
 .jspTrack
 {
-    background: gray;
-    position: relative;
+	background: #dde;
+	position: relative;
 }
+
 .jspDrag
 {
-    background: rgba(0,0,0,0.4); /* changed from #bbd */
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
 }
 
 .jspHorizontalBar .jspTrack,
