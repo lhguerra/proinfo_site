@@ -1,0 +1,578 @@
+/*ligature symbols*/
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('LigatureSymbols-2.11.eot');
+    src: url('LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('LigatureSymbols-2.11.woff') format('woff'),
+         url('LigatureSymbols-2.11.ttf') format('truetype'),
+         url('LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.lsf-icon:before {
+  content:attr(title);
+  margin-right:0.3em;
+  font-size:130%;
+}
+
+.lsf-icon.amazon:before {
+  content: '\E007';
+}
+
+/*main styles*/
+* {
+	font-family: 'Raleway', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #025d7d;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-image: url('montagem.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	height: 100%;
+	min-height: 550px;
+	font-size: 12px;
+}
+
+	body > div {
+		height: 100%;
+	}
+
+h1 {
+	font-size: 26px;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400 !important;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	max-width: 640px;
+}
+
+span {
+	font-weight: 400 !important;
+	color: white;
+}
+
+strong {
+	font-weight: bolder !important;
+}
+
+img {
+	border: none;
+}
+
+/*menu*/
+aside {
+	background-color: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 180px;
+	z-index: 1000;
+}
+
+	#logo img {
+		width: 140px;
+		padding: 20px;
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+		nav li {
+		}
+		
+			nav span {
+				color: black;
+			}
+		
+			nav a {
+				width: 180px;
+				padding-left: 10px;
+				color: #025d7d;
+				font-size: 14px;
+				font-weight: 600;
+				text-decoration: none;
+				line-height: 2em;
+				display: block;
+			}
+		
+				nav a:hover, nav a.scroll-current {
+					background-color: #025d7d;
+					color: white;
+				}
+				
+	#aside-footer {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: #025d7d;
+		padding: 10px 0;
+		height: 60px;
+	}
+	
+		#aside-footer h4 {
+			color: white;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#aside-footer ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+			#aside-footer li {
+				display: inline-block;
+			}
+			
+				#aside-footer a {
+					color: white;
+					font-size: 18px;
+				}
+				
+					#aside-footer a img {
+						width: 40px;
+					}
+
+/*content*/
+section {
+	margin-left: 200px;
+	margin-bottom: 500px;
+	height: 100%;
+	position: relative;
+}
+	
+	section header {
+		padding: 20px;
+		background-color: #19a8da;
+		z-index: 1100;
+	}
+	
+	.section-wrapper {
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		margin-top: 20px;
+		right: 0;
+	}
+	
+		section header li {
+			color: white;
+		}
+		
+		.side-img {
+			position: absolute;
+			top: 110px;
+			bottom: 100px;
+			right: 20px;
+			width: 200px;
+		}
+
+/*inicio*/
+
+.bx-pager {
+	display: none;
+}
+
+#inicio article {
+	position: absolute;
+	bottom: 100px;
+	right: 20px;
+	width: 80%;
+	max-width: 600px;
+}
+
+	#inicio article h1,
+	#inicio article p {
+		background-color: rgba(0,0,0,0.8);
+		border-left: 5px solid #19a8da;
+		padding: 10px;
+	}
+	
+	#inicio article h1 {
+		margin-bottom: 20px;
+		color: #19a8da;
+	}
+	
+	#inicio article p {
+		margin-bottom: 20px;
+		color: white;
+	}
+	
+	#inicio article a {
+		background-color: #19a8da;
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	
+	#inicio ul {
+		margin: 0 !important;
+		font-size: 16px;
+		font-weight: bolder;
+	}
+	
+	.quotee {
+		height: 20px;
+		margin-bottom: -16px;
+	}
+	
+	.quoted {
+		height: 20px;
+		margin-top: -16px;
+	}
+	
+/*o que é*/
+	#o-que-e article {
+		position: absolute;
+		right: 290px;
+		left: 20px;
+		margin-top: 20px;
+	}
+	
+	#o-que-e ul {
+		list-style: none;
+		padding-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	
+		#o-que-e ul li {
+			display: inline-block;
+		}
+		
+			#o-que-e ul li a {
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: 600;
+				display: block;
+				background-color: #d2d2d2;
+				padding: 5px 20px;
+				margin: 5px;
+			}
+			
+				#o-que-e ul li a:hover {
+					color: white;
+					background-color: #025d7d;
+				}
+			
+	#o-que-e iframe {
+		width: 100%;
+		max-width: 500px;
+		display: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.box {
+		width: 250px;
+	}
+	
+		.box h3 {
+			background: #025d7d;
+			color: white;
+			padding: 5px;
+			margin: 0;
+		}
+		
+		/*@media screen and (-webkit-min-device-pixel-ratio:0) { 
+		 .box h3{margin-top: -20px;} 
+		}*/
+		
+		.box > div {
+			margin-top: 20px;
+		}
+		
+		.over {
+			/*height: calc(100% - 340px);
+			height: -moz-calc(100% - 340px);
+			height: -o-calc(100% - 340px);
+			height: -webkit-calc(100% - 340px);
+			height: -ms-calc(100% - 340px);*/
+		}
+		
+			.over > div {
+				
+			}
+			
+				#como-participar {
+					margin-top: -60px;
+				}
+		
+		.box p {
+			font-size: 12.5px;
+			background: #d2d2d2;
+			padding: 5px 10px;
+			margin: 0;
+		}
+		
+		.over .box-wrapper {
+			position: absolute;
+			bottom: 90px;
+			top: 270px;
+		}
+		
+			.box-wrapper div {
+				
+			}
+	
+	.bb {
+		background: white;
+		position: absolute;
+		right: 20px;
+		height: calc(100% - 100px);
+		height: -moz-calc(100% - 100px);
+		height: -o-calc(100% - 100px);
+		height: -webkit-calc(100% - 100px);
+		height: -ms-calc(100% - 100px);
+	}
+	
+	.show {
+		z-index: 50 !important;
+	}
+	
+	.display {
+		display: block !important;
+	}
+	
+	#proposta,
+	#metodologia,
+	#inscricao,
+	#estrutura,
+	#implementacao,
+	.proposta,
+	.metodologia,
+	.inscricao,
+	.estrutura,
+	.implementacao {
+	}
+	
+		#proposta,
+		.proposta {
+			z-index: 500;
+		}
+		
+		#metodologia,
+		.metodologia {
+			z-index: 400;
+		}
+		
+		#inscricao,
+		.inscricao {
+			z-index: 300;
+		}
+		
+		#estrutura,
+		.estrutura {
+			z-index: 200;
+		}
+		
+		#implementacao,
+		.implementacao {
+			z-index: 100;
+		}
+			
+/*box scroll*/
+
+.box ::-webkit-scrollbar {
+      width: 20px;
+} /* this targets the default scrollbar (compulsory) */
+
+.box ::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+.box ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track */
+.box ::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+.box ::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */	
+
+/*como funciona*/
+#como-funciona{
+}
+
+	#como-funciona article {
+		position: absolute;
+		padding: 20px;
+		right: 240px;
+		left: 0;
+	}
+
+	#Stage {
+		margin: 20px;
+		z-index: 100;
+		background-color: transparent !important;
+	}
+
+/*como estudar ead*/
+#como-estudar article {
+	padding: 20px;
+}
+
+/*quer saber mais*/
+#quer-saber-mais {
+}
+
+	#quer-saber-mais article {
+		padding: 20px;
+	}
+	
+		#quer-saber-mais article ul {
+			list-style: none;
+		}
+		
+			#quer-saber-mais article ul li {
+				display: inline-block;
+				text-align: center;
+				margin: 10px;
+			}
+			
+				#quer-saber-mais article ul li a {
+					text-decoration: none;
+					padding: 5px;
+					font-size: 16px;
+					color: white;
+					background-color: #025d7d;
+				}
+				
+					#quer-saber-mais article ul li a:hover{
+						color: #025d7d;
+						background-color: white;
+					}
+				
+				#quer-saber-mais article ul li img {
+					width: 120px;
+					box-shadow: 2px 2px 2px gray;
+					margin-bottom: 10px;
+				}
+
+/*contato*/
+
+#contato article {
+	padding: 10px 20px;
+}
+
+	#contato h3 {
+		margin: 0 10px;
+		padding: 0;
+	}
+	
+	#contato input,
+	#contato textarea {
+		margin: 10px;
+		padding: 10px;
+	}
+
+	#contato article span {
+		color: #025d7d;
+	}
+
+/*footer*/
+footer {
+	height: 60px;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 200px;
+	background-color: #025d7d;
+	z-index: 1000;
+	color: white;
+}
+
+	footer h4 {
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+	
+	footer img {
+		height: 40px;
+		margin: 10px 20px;
+	}
+	
+	footer h4,
+	footer img {
+		float: left;
+	}
+	
+	footer a {
+		background-color: rgba(255,255,255,0.4);
+		float: right;
+		padding: 0 10px;
+		margin: 10px;
+		text-decoration: none;
+		display: block;
+		width: 170px;
+	}
+	
+		footer a img {
+			width: 30px;
+			height: 30px;
+			padding: 5px 0;
+			margin: 0 10px 0 0;
+		}
+		
+		footer a p {
+			font-size: 14px;
+			font-weight: 900;
+			line-height: 40px;
+		}
