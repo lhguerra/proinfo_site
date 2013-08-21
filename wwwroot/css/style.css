@@ -138,7 +138,7 @@ aside {
 				width: 180px;
 				padding-left: 10px;
 				color: #025d7d;
-				font-size: 14px;
+				font-size: 13px;
 				font-weight: 600;
 				text-decoration: none;
 				line-height: 2em;
@@ -320,6 +320,7 @@ section {
 	
 	.box {
 		width: 250px;
+		min-height: 250px;
 	}
 	
 		.box h3 {
@@ -525,6 +526,12 @@ section {
 		color: #025d7d;
 	}
 
+/*creditos*/
+
+#creditos article {
+	padding: 20px;
+}
+
 /*footer*/
 footer {
 	height: 60px;
@@ -554,7 +561,7 @@ footer {
 		float: left;
 	}
 	
-	footer a {
+	footer a:last-child {
 		background-color: rgba(255,255,255,0.4);
 		float: right;
 		padding: 0 10px;
@@ -564,7 +571,7 @@ footer {
 		width: 170px;
 	}
 	
-		footer a img {
+		footer a:last-child img {
 			width: 30px;
 			height: 30px;
 			padding: 5px 0;
