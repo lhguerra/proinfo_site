@@ -198,30 +198,28 @@ var symbols = {
          {
             id:'ne',
             type:'group',
-            rect:['270px','104px','175','85','auto','auto'],
+            rect:['270px','104px','175','85px','auto','auto'],
             c:[
             {
                id:'_7_23',
                type:'image',
-               rect:['0px','0px','175px','85px','auto','auto'],
-               fill:["rgba(0,0,0,0)",im+"7_2_v.png",'0px','0px']
+               rect:['0px','0px','175px','77px','auto','auto'],
+               fill:["rgba(0,0,0,0)",im+"7_2_b1.png",'0px','0px']
             },
             {
                id:'PCopy4',
                type:'text',
-               rect:['22px','22px','49px','auto','auto','auto'],
-               text:"Núcleos<br>",
+               rect:['30px','47px','116px','15px','auto','auto'],
+               text:"Núcleos Específicos<br>",
                align:"left",
-               font:['raleway, sans-serif',10,"rgba(255,255,255,1.00)","bold","none","normal"],
+               font:['raleway, sans-serif',12,"rgba(255,255,255,1.00)","500","none","normal"],
                transform:[]
             },
             {
-               id:'Text2Copy5',
-               type:'text',
-               rect:['97px','50px','auto','auto','auto','auto'],
-               text:"       Específicos",
-               align:"left",
-               font:['raleway, sans-serif',10,"rgba(255,255,255,1)","bold","none","normal"]
+               id:'_7_23Copy2',
+               type:'image',
+               rect:['0px','0px','175px','77px','auto','auto'],
+               fill:["rgba(0,0,0,0)",im+"7_2_b1.png",'0px','0px']
             }]
          },
          {
@@ -694,7 +692,7 @@ var symbols = {
          {
             id:'Slider1',
             type:'rect',
-            rect:['340px','181px','10px','37px','auto','auto'],
+            rect:['340px','184px','10px','34px','auto','auto'],
             fill:["rgba(255,255,255,1.00)"],
             stroke:[0,"rgb(0, 0, 0)","none"]
          },
@@ -835,7 +833,7 @@ var symbols = {
          {
             id:'botao1',
             type:'image',
-            rect:['330px','181px','36px','37px','auto','auto'],
+            rect:['330px','185px','36px','37px','auto','auto'],
             fill:["rgba(0,0,0,0)",im+"botao1.png",'0px','0px']
          },
          {
@@ -848,7 +846,42 @@ var symbols = {
          {
             id:'BOTAOCOMECO',
             type:'rect',
-            rect:['0px','0px','640px','181px','auto','auto'],
+            rect:['84px','51px','363px','53px','auto','auto'],
+            fill:["rgba(255,255,255,0.00)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'BOTAOCOMECOCopy',
+            type:'rect',
+            rect:['268px','125px','179px','53px','auto','auto'],
+            fill:["rgba(255,255,255,0.00)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'BOTAOCOMECOCopy4',
+            type:'rect',
+            rect:['448px','43px','90px','53px','auto','auto'],
+            fill:["rgba(255,255,255,0.00)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'BOTAOCOMECOCopy2',
+            type:'rect',
+            rect:['88px','111px','78px','34px','auto','auto'],
+            fill:["rgba(255,255,255,0.00)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'BOTAOCOMECOCopy5',
+            type:'rect',
+            rect:['453px','111px','78px','34px','auto','auto'],
+            fill:["rgba(255,255,255,0.00)"],
+            stroke:[0,"rgb(0, 0, 0)","none"]
+         },
+         {
+            id:'BOTAOCOMECOCopy3',
+            type:'rect',
+            rect:['181px','12px','78px','34px','auto','auto'],
             fill:["rgba(255,255,255,0.00)"],
             stroke:[0,"rgb(0, 0, 0)","none"]
          }],
@@ -901,60 +934,59 @@ var symbols = {
       },
    states: {
       "Base State": {
-         "${_nb}": [
-            ["style", "top", '104px'],
-            ["style", "display", 'block'],
-            ["style", "height", '47px'],
-            ["style", "left", '90px'],
-            ["style", "width", '75px']
+         "${_PLACCopy7}": [
+            ["style", "top", '14px'],
+            ["style", "text-align", 'center'],
+            ["style", "display", 'none'],
+            ["style", "font-weight", '700'],
+            ["style", "left", '-2px'],
+            ["style", "font-family", 'raleway, sans-serif']
          ],
          "${_mom1Copy}": [
-            ["color", "background-color", 'rgba(173,173,173,1.00)'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'block'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "left", '0px'],
-            ["style", "top", '15px']
-         ],
-         "${_LoremIpsumreplicarparacadaponto}": [
-            ["color", "color", 'rgba(82,82,82,1.00)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '17px'],
-            ["style", "width", '340px'],
-            ["style", "top", '187px'],
-            ["style", "height", '24px'],
-            ["style", "font-family", 'Arial, Helvetica, sans-serif'],
+            ["transform", "scaleY", '1.20833'],
             ["style", "display", 'block'],
-            ["style", "font-size", '18px']
+            ["style", "top", '15px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(173,173,173,1.00)']
          ],
-         "${_ne}": [
-            ["style", "display", 'block']
-         ],
-         "${_PLACLoremCopy5}": [
-            ["style", "line-height", '18px'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'normal'],
-            ["style", "left", '168px'],
-            ["style", "font-size", '12px'],
-            ["style", "top", '256px'],
-            ["style", "text-align", 'justify'],
+         "${_mom1Copy5}": [
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["style", "top", '25px'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "height", '111px'],
             ["style", "display", 'none'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "width", '398px']
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '115px'],
+            ["style", "width", '464px']
          ],
-         "${_momento2Copy}": [
-            ["style", "-webkit-transform-origin", [50,0], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "top", '351px'],
-            ["transform", "scaleY", '0.87931'],
-            ["style", "display", 'none']
+         "${_mom1Copy6}": [
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["style", "top", '15px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(173,173,173,1)']
+         ],
+         "${__2}": [
+            ["style", "top", '22px'],
+            ["style", "left", '83px']
+         ],
+         "${__5}": [
+            ["style", "top", '5px'],
+            ["style", "left", '181px']
          ],
          "${_PLACLoremCopy6}": [
             ["style", "line-height", 'normal'],
@@ -968,11 +1000,19 @@ var symbols = {
             ["style", "width", '398px']
          ],
          "${_botao1}": [
-            ["style", "top", '181px'],
+            ["style", "top", '185px'],
             ["transform", "rotateZ", '0deg'],
             ["style", "height", '37px'],
             ["style", "left", '293px'],
             ["style", "width", '36px']
+         ],
+         "${_BOTAOCOMECOCopy}": [
+            ["color", "background-color", 'rgba(255,255,255,0)'],
+            ["style", "display", 'block'],
+            ["style", "height", '53px'],
+            ["style", "top", '125px'],
+            ["style", "left", '268px'],
+            ["style", "width", '179px']
          ],
          "${_PLACLorem}": [
             ["style", "line-height", '18px'],
@@ -985,6 +1025,14 @@ var symbols = {
             ["style", "display", 'none'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["style", "width", '398px']
+         ],
+         "${_BOTAOCOMECOCopy2}": [
+            ["color", "background-color", 'rgba(255,255,255,0)'],
+            ["style", "top", '111px'],
+            ["style", "height", '34px'],
+            ["style", "display", 'block'],
+            ["style", "left", '88px'],
+            ["style", "width", '78px']
          ],
          "${__4_23}": [
             ["style", "top", '-50px'],
@@ -1014,7 +1062,7 @@ var symbols = {
          ],
          "${__7_23}": [
             ["style", "top", '0px'],
-            ["style", "height", '85px'],
+            ["style", "height", '77px'],
             ["style", "display", 'block'],
             ["style", "left", '0px'],
             ["style", "width", '175px']
@@ -1030,6 +1078,14 @@ var symbols = {
             ["style", "top", '104px'],
             ["style", "left", '90px']
          ],
+         "${_BOTAOCOMECOCopy5}": [
+            ["color", "background-color", 'rgba(255,255,255,0)'],
+            ["style", "display", 'block'],
+            ["style", "height", '34px'],
+            ["style", "top", '111px'],
+            ["style", "left", '453px'],
+            ["style", "width", '78px']
+         ],
          "${_NB2}": [
             ["color", "color", 'rgba(254,192,5,1.00)'],
             ["style", "font-weight", '700'],
@@ -1041,19 +1097,33 @@ var symbols = {
             ["style", "font-size", '20px'],
             ["style", "display", 'none']
          ],
-         "${_mom1Copy7}": [
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["color", "background-color", 'rgba(47,47,47,1.00)'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "height", '150px'],
+         "${_PLACLoremCopy3}": [
+            ["style", "line-height", '18px'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", 'normal'],
+            ["style", "left", '166px'],
+            ["style", "font-size", '12px'],
+            ["style", "top", '351px'],
+            ["style", "text-align", 'justify'],
             ["style", "display", 'none'],
-            ["style", "top", '46px'],
-            ["style", "left", '115px'],
-            ["style", "width", '445px']
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "width", '398px']
+         ],
+         "${_BOTAOCOMECOCopy3}": [
+            ["color", "background-color", 'rgba(255,255,255,0)'],
+            ["style", "display", 'block'],
+            ["style", "height", '34px'],
+            ["style", "top", '12px'],
+            ["style", "left", '181px'],
+            ["style", "width", '78px']
+         ],
+         "${__3_23Copy}": [
+            ["style", "top", '-36px'],
+            ["transform", "scaleY", '0.40336'],
+            ["transform", "scaleX", '0.39378'],
+            ["style", "opacity", '0'],
+            ["style", "left", '-59px'],
+            ["style", "display", 'block']
          ],
          "${__9}": [
             ["style", "top", '104px'],
@@ -1066,42 +1136,38 @@ var symbols = {
             ["style", "opacity", '0'],
             ["style", "left", '-66px']
          ],
-         "${_mom1Copy3}": [
-            ["style", "top", '15px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'block'],
-            ["color", "background-color", 'rgba(47,47,47,1.00)'],
-            ["style", "left", '0px'],
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
+         "${_PCopy}": [
+            ["style", "top", '51px'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", 'normal'],
+            ["style", "left", '215px'],
+            ["style", "font-size", '36px']
          ],
          "${_mom1botaoCopy2}": [
-            ["color", "background-color", 'rgba(255,0,0,0)'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["style", "top", '15px'],
             ["style", "left", '0px'],
-            ["style", "top", '15px']
+            ["color", "background-color", 'rgba(255,0,0,0)']
          ],
          "${_PCopy4}": [
             ["style", "line-height", '14px'],
             ["transform", "rotateZ", '0deg'],
             ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '22px'],
-            ["style", "width", '49px'],
-            ["style", "top", '22px'],
+            ["style", "font-weight", '500'],
+            ["style", "left", '30px'],
+            ["style", "width", '116px'],
+            ["style", "top", '47px'],
             ["style", "text-align", 'left'],
             ["style", "font-style", 'normal'],
             ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "font-size", '10px']
+            ["style", "height", '15px'],
+            ["style", "font-size", '12px']
          ],
          "${__2_23}": [
             ["style", "top", '-66px'],
@@ -1131,10 +1197,17 @@ var symbols = {
             ["style", "left", '11px'],
             ["style", "width", '94px']
          ],
-         "${_Avancado}": [
-            ["style", "top", '237px'],
-            ["style", "left", '181px'],
-            ["style", "display", 'none']
+         "${_mom1Copy3}": [
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'block'],
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '0px'],
+            ["style", "top", '15px']
          ],
          "${_PLAC}": [
             ["style", "top", '20px'],
@@ -1142,13 +1215,17 @@ var symbols = {
             ["style", "left", '40px'],
             ["style", "font-family", 'raleway, sans-serif']
          ],
-         "${__2_23Copy}": [
-            ["style", "top", '-66px'],
-            ["transform", "scaleY", '0.40358'],
-            ["transform", "scaleX", '0.40541'],
-            ["style", "opacity", '0'],
-            ["style", "left", '-66px'],
-            ["style", "display", 'block']
+         "${_mom3Copy5}": [
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '0px'],
+            ["style", "top", '-5px']
          ],
          "${_PLACCopy3}": [
             ["style", "top", '20px'],
@@ -1158,20 +1235,6 @@ var symbols = {
             ["style", "left", '11px'],
             ["style", "width", '94px']
          ],
-         "${_mom2Copy3}": [
-            ["style", "top", '5px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
-            ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(173,173,173,1)']
-         ],
-         "${_botao2}": [
-            ["style", "top", '207px'],
-            ["style", "display", 'none'],
-            ["style", "height", '9px'],
-            ["style", "left", '602px'],
-            ["style", "width", '10px']
-         ],
          "${_LCopy}": [
             ["style", "top", '53px'],
             ["style", "font-family", 'raleway, sans-serif'],
@@ -1179,6 +1242,23 @@ var symbols = {
             ["style", "font-weight", 'normal'],
             ["style", "left", '130px'],
             ["style", "font-size", '24px']
+         ],
+         "${_PCopy3}": [
+            ["style", "line-height", 'normal'],
+            ["transform", "rotateZ", '0deg'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", '700'],
+            ["style", "left", '292px'],
+            ["style", "width", '49px'],
+            ["style", "top", '127px'],
+            ["style", "font-style", 'normal'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "font-size", '10px']
+         ],
+         "${_Avancado}": [
+            ["style", "top", '237px'],
+            ["style", "left", '181px'],
+            ["style", "display", 'none']
          ],
          "${_formadoresCopy}": [
             ["style", "top", '28px'],
@@ -1193,42 +1273,7 @@ var symbols = {
             ["style", "left", '448px']
          ],
          "${_mom1Copy8}": [
-            ["style", "top", '15px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
             ["color", "background-color", 'rgba(47,47,47,1.00)'],
-            ["style", "left", '0px'],
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
-         ],
-         "${_mom2botao}": [
-            ["style", "top", '5px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'block'],
-            ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(255,0,0,0.00)']
-         ],
-         "${_PCopy}": [
-            ["style", "top", '51px'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'normal'],
-            ["style", "left", '215px'],
-            ["style", "font-size", '36px']
-         ],
-         "${__7}": [
-            ["style", "top", '104px'],
-            ["style", "left", '270px']
-         ],
-         "${_GERAL}": [
-            ["style", "top", '238px'],
-            ["style", "left", '180px'],
-            ["style", "display", 'none']
-         ],
-         "${_mom1Copy6}": [
-            ["color", "background-color", 'rgba(173,173,173,1)'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
@@ -1239,51 +1284,91 @@ var symbols = {
             ["style", "left", '0px'],
             ["style", "top", '15px']
          ],
-         "${_momento3}": [
-            ["style", "display", 'none'],
-            ["style", "top", '409px'],
-            ["transform", "scaleY", '0.87931'],
-            ["style", "-webkit-transform-origin", [50,-100], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}]
+         "${_ENSINO}": [
+            ["style", "top", '238px'],
+            ["style", "left", '180px'],
+            ["style", "display", 'none']
          ],
-         "${_mom3Copy3}": [
-            ["color", "background-color", 'rgba(173,173,173,1)'],
+         "${_mom1botao}": [
+            ["color", "background-color", 'rgba(255,0,0,0.00)'],
             ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
-            ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "left", '0px'],
-            ["style", "top", '-5px']
-         ],
-         "${__5}": [
-            ["style", "top", '5px'],
-            ["style", "left", '181px']
-         ],
-         "${_mom1Copy9}": [
+            ["style", "display", 'block'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '0px'],
+            ["style", "top", '15px']
+         ],
+         "${__7}": [
+            ["style", "top", '104px'],
+            ["style", "left", '270px']
+         ],
+         "${_GERAL}": [
+            ["style", "top", '238px'],
+            ["style", "left", '180px'],
+            ["style", "display", 'none']
+         ],
+         "${_nb1LoremCopy}": [
+            ["style", "line-height", '18px'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", '400'],
+            ["style", "left", '72px'],
+            ["style", "font-size", '12px'],
+            ["style", "text-align", 'justify'],
+            ["style", "display", 'none'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "width", '499px']
+         ],
+         "${_momento3}": [
+            ["style", "top", '409px'],
+            ["style", "-webkit-transform-origin", [50,-100], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["transform", "scaleY", '0.87931'],
+            ["style", "display", 'none']
+         ],
+         "${__5_23Copy}": [
+            ["style", "top", '-38px'],
+            ["transform", "scaleY", '0.3871'],
+            ["transform", "scaleX", '0.385'],
+            ["style", "opacity", '0'],
+            ["style", "left", '-61px'],
+            ["style", "display", 'none']
+         ],
+         "${__2_23Copy}": [
+            ["style", "top", '-66px'],
+            ["transform", "scaleY", '0.40358'],
+            ["transform", "scaleX", '0.40541'],
+            ["style", "opacity", '0'],
+            ["style", "left", '-66px'],
+            ["style", "display", 'block']
+         ],
+         "${_mom1Copy9}": [
+            ["style", "top", '15px'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
-            ["style", "top", '15px'],
+            ["color", "background-color", 'rgba(173,173,173,1)'],
             ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(173,173,173,1)']
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
-         "${_PLACCopy7}": [
-            ["style", "top", '14px'],
-            ["style", "text-align", 'center'],
-            ["style", "display", 'none'],
+         "${_NB1}": [
+            ["color", "color", 'rgba(254,192,5,1.00)'],
             ["style", "font-weight", '700'],
-            ["style", "left", '-2px'],
-            ["style", "font-family", 'raleway, sans-serif']
+            ["style", "left", '43px'],
+            ["style", "width", '557px'],
+            ["style", "top", '212px'],
+            ["style", "height", '37px'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "display", 'none'],
+            ["style", "font-size", '20px']
          ],
          "${_Lightbox}": [
             ["style", "top", '71px'],
@@ -1304,48 +1389,39 @@ var symbols = {
             ["style", "font-size", '20px'],
             ["style", "display", 'none']
          ],
-         "${_mom3Copy5}": [
-            ["style", "top", '-5px'],
+         "${_mom2botao}": [
+            ["style", "top", '5px'],
             ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
-            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["style", "display", 'block'],
             ["style", "left", '0px'],
-            ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}]
+            ["color", "background-color", 'rgba(255,0,0,0.00)']
          ],
          "${_Text2Copy4}": [
             ["style", "top", '155px'],
             ["style", "left", '367px'],
             ["style", "line-height", 'normal']
          ],
-         "${__5_23Copy}": [
-            ["style", "top", '-38px'],
-            ["transform", "scaleY", '0.3871'],
-            ["transform", "scaleX", '0.385'],
-            ["style", "opacity", '0'],
-            ["style", "left", '-61px'],
-            ["style", "display", 'none']
+         "${_ne}": [
+            ["style", "top", '104px'],
+            ["style", "display", 'block']
          ],
          "${_Stage}": [
             ["color", "background-color", 'rgba(255,255,255,1)'],
-            ["style", "overflow", 'hidden'],
+            ["style", "overflow", 'visible'],
             ["style", "height", '480px'],
             ["style", "width", '640px']
          ],
          "${_mom1}": [
+            ["style", "top", '15px'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["style", "left", '0px'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
-            ["style", "top", '15px'],
-            ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(47,47,47,1.00)']
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_nb2}": [
             ["color", "color", 'rgba(255,255,255,1)'],
@@ -1358,15 +1434,13 @@ var symbols = {
             ["style", "font-family", 'raleway, sans-serif'],
             ["style", "width", '49px']
          ],
-         "${_momento1}": [
-            ["style", "display", 'none'],
-            ["style", "top", '293px'],
-            ["transform", "scaleY", '0.87931'],
-            ["style", "-webkit-transform-origin", [50,100], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}]
+         "${_PLACCopy}": [
+            ["style", "top", '20px'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "height", '16px'],
+            ["style", "font-weight", '700'],
+            ["style", "left", '11px'],
+            ["style", "width", '94px']
          ],
          "${_mom2Copy2}": [
             ["style", "top", '5px'],
@@ -1386,24 +1460,26 @@ var symbols = {
             ["style", "font-size", '20px'],
             ["style", "display", 'none']
          ],
-         "${_PLACCopy}": [
-            ["style", "top", '20px'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "height", '16px'],
+         "${_LoremIpsumreplicarparacadaponto}": [
+            ["color", "color", 'rgba(82,82,82,1.00)'],
             ["style", "font-weight", '700'],
-            ["style", "left", '11px'],
-            ["style", "width", '94px']
+            ["style", "left", '17px'],
+            ["style", "width", '340px'],
+            ["style", "top", '191px'],
+            ["style", "height", '24px'],
+            ["style", "font-family", 'Arial, Helvetica, sans-serif'],
+            ["style", "display", 'block'],
+            ["style", "font-size", '18px']
          ],
-         "${_nb1LoremCopy2}": [
-            ["style", "line-height", '18px'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'normal'],
-            ["style", "left", '72px'],
-            ["style", "width", '499px'],
-            ["style", "text-align", 'justify'],
+         "${_momentoPLACCopy}": [
             ["style", "display", 'none'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "font-size", '12px']
+            ["style", "top", '235px'],
+            ["transform", "scaleY", '0.87931'],
+            ["style", "-webkit-transform-origin", [50,200], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_PCopy9}": [
             ["style", "top", '75px'],
@@ -1420,16 +1496,12 @@ var symbols = {
             ["style", "left", '-59px'],
             ["style", "display", 'block']
          ],
-         "${_nb1LoremCopy}": [
-            ["style", "line-height", '18px'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", '400'],
-            ["style", "left", '72px'],
-            ["style", "font-size", '12px'],
-            ["style", "text-align", 'justify'],
+         "${_mom2Copy3}": [
+            ["style", "top", '5px'],
+            ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "width", '499px']
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(173,173,173,1)']
          ],
          "${_PLACLoremCopy}": [
             ["style", "line-height", '18px'],
@@ -1459,87 +1531,78 @@ var symbols = {
             ["style", "display", 'block']
          ],
          "${_momento3Copy}": [
-            ["style", "top", '409px'],
             ["style", "-webkit-transform-origin", [50,-100], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,-100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "display", 'none'],
             ["transform", "scaleY", '0.87931'],
-            ["style", "display", 'none']
+            ["style", "top", '409px']
          ],
-         "${_mom1botao}": [
-            ["style", "top", '15px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'block'],
-            ["color", "background-color", 'rgba(255,0,0,0.00)'],
-            ["style", "left", '0px'],
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
+         "${__9_23}": [
+            ["style", "top", '-38px'],
+            ["transform", "scaleY", '0.3871'],
+            ["transform", "scaleX", '0.38308'],
+            ["style", "left", '-62px'],
+            ["style", "display", 'block']
          ],
          "${_mom3Copy2}": [
-            ["style", "top", '-5px'],
+            ["color", "background-color", 'rgba(173,173,173,1.00)'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
-            ["color", "background-color", 'rgba(173,173,173,1.00)'],
-            ["style", "left", '0px'],
             ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}]
+            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '0px'],
+            ["style", "top", '-5px']
          ],
-         "${_momentoPLACCopy}": [
-            ["style", "-webkit-transform-origin", [50,200], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "display", 'none'],
+         "${_momento1}": [
+            ["style", "top", '293px'],
+            ["style", "-webkit-transform-origin", [50,100], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["transform", "scaleY", '0.87931'],
-            ["style", "top", '235px']
+            ["style", "display", 'none']
          ],
          "${_FUNDAMENTAL}": [
             ["style", "top", '238px'],
             ["style", "left", '180px'],
             ["style", "display", 'none']
          ],
-         "${_momentoPLAC}": [
-            ["style", "top", '235px'],
-            ["style", "-webkit-transform-origin", [50,200], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "scaleY", '0.87931'],
-            ["style", "display", 'none']
+         "${__8_25}": [
+            ["style", "top", '-67px'],
+            ["transform", "scaleY", '0.40179'],
+            ["transform", "scaleX", '0.4009'],
+            ["style", "left", '-66px'],
+            ["style", "display", 'block']
          ],
          "${_mom1Copy11}": [
-            ["color", "background-color", 'rgba(47,47,47,1.00)'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "left", '0px'],
-            ["style", "top", '15px']
-         ],
-         "${_mom1Copy2}": [
-            ["style", "top", '15px'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
-            ["color", "background-color", 'rgba(173,173,173,1.00)'],
+            ["style", "top", '15px'],
             ["style", "left", '0px'],
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
+            ["color", "background-color", 'rgba(47,47,47,1.00)']
+         ],
+         "${_nb1LoremCopy2}": [
+            ["style", "line-height", '18px'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", 'normal'],
+            ["style", "left", '72px'],
+            ["style", "width", '499px'],
+            ["style", "text-align", 'justify'],
+            ["style", "display", 'none'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "font-size", '12px']
          ],
          "${_nb1Copy2}": [
             ["style", "top", '12px'],
@@ -1568,8 +1631,8 @@ var symbols = {
          "${_Slider1}": [
             ["color", "background-color", 'rgba(255,255,255,1.00)'],
             ["style", "display", 'block'],
-            ["style", "height", '37px'],
-            ["style", "top", '181px'],
+            ["style", "height", '34px'],
+            ["style", "top", '184px'],
             ["style", "left", '350px'],
             ["style", "width", '0px']
          ],
@@ -1586,20 +1649,20 @@ var symbols = {
             ["style", "font-size", '10px']
          ],
          "${_BOTAOCOMECO}": [
+            ["color", "background-color", 'rgba(255,255,255,0.00)'],
+            ["style", "top", '51px'],
+            ["style", "height", '53px'],
             ["style", "display", 'block'],
-            ["color", "background-color", 'rgba(255,255,255,0.00)']
+            ["style", "left", '84px'],
+            ["style", "width", '363px']
          ],
-         "${_PLACLoremCopy3}": [
-            ["style", "line-height", '18px'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'normal'],
-            ["style", "left", '166px'],
-            ["style", "font-size", '12px'],
-            ["style", "top", '351px'],
-            ["style", "text-align", 'justify'],
-            ["style", "display", 'none'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "width", '398px']
+         "${_BOTAOCOMECOCopy4}": [
+            ["color", "background-color", 'rgba(255,255,255,0)'],
+            ["style", "top", '43px'],
+            ["style", "height", '53px'],
+            ["style", "display", 'block'],
+            ["style", "left", '448px'],
+            ["style", "width", '90px']
          ],
          "${_mom2Copy5}": [
             ["color", "background-color", 'rgba(47,47,47,1.00)'],
@@ -1617,14 +1680,6 @@ var symbols = {
             ["style", "left", '115px'],
             ["style", "width", '461px']
          ],
-         "${_tcc}": [
-            ["style", "top", '30px'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'normal'],
-            ["style", "left", '19px'],
-            ["style", "font-size", '24px']
-         ],
          "${_Formadores}": [
             ["color", "color", 'rgba(254,192,5,1.00)'],
             ["style", "font-weight", 'bold'],
@@ -1636,12 +1691,17 @@ var symbols = {
             ["style", "font-size", '20px'],
             ["style", "display", 'none']
          ],
-         "${_mom2botaoCopy}": [
-            ["style", "top", '5px'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
+         "${_navancados}": [
+            ["style", "display", 'block'],
+            ["style", "left", '453px']
+         ],
+         "${__7_23Copy2}": [
+            ["style", "top", '0px'],
+            ["style", "height", '77px'],
+            ["style", "display", 'block'],
+            ["style", "opacity", '0'],
             ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(255,0,0,0)']
+            ["style", "width", '175px']
          ],
          "${_Text2Copy3}": [
             ["style", "top", '155px'],
@@ -1683,13 +1743,12 @@ var symbols = {
             ["style", "left", '42px'],
             ["style", "width", '461px']
          ],
-         "${__3_23Copy}": [
-            ["style", "top", '-36px'],
-            ["transform", "scaleY", '0.40336'],
-            ["transform", "scaleX", '0.39378'],
-            ["style", "opacity", '0'],
-            ["style", "left", '-59px'],
-            ["style", "display", 'block']
+         "${_mom2botaoCopy}": [
+            ["style", "top", '5px'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(255,0,0,0)']
          ],
          "${_PLACCopy4}": [
             ["style", "top", '20px'],
@@ -1700,20 +1759,24 @@ var symbols = {
             ["style", "width", '94px']
          ],
          "${_mom3botaoCopy}": [
-            ["color", "background-color", 'rgba(255,0,0,0)'],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
             ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["style", "top", '-5px'],
             ["style", "left", '0px'],
-            ["style", "top", '-5px']
+            ["color", "background-color", 'rgba(255,0,0,0)']
          ],
-         "${_navancados}": [
-            ["style", "display", 'block'],
-            ["style", "left", '453px']
+         "${_tcc}": [
+            ["style", "top", '30px'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", 'normal'],
+            ["style", "left", '19px'],
+            ["style", "font-size", '24px']
          ],
          "${_CCopy}": [
             ["style", "top", '53px'],
@@ -1723,12 +1786,15 @@ var symbols = {
             ["style", "left", '309px'],
             ["style", "font-size", '24px']
          ],
-         "${__9_23}": [
-            ["style", "top", '-38px'],
-            ["transform", "scaleY", '0.3871'],
-            ["transform", "scaleX", '0.38308'],
-            ["style", "left", '-62px'],
-            ["style", "display", 'block']
+         "${_momentoPLAC}": [
+            ["style", "-webkit-transform-origin", [50,200], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,200],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "display", 'none'],
+            ["transform", "scaleY", '0.87931'],
+            ["style", "top", '235px']
          ],
          "${_PLACCopy5}": [
             ["style", "top", '20px'],
@@ -1740,9 +1806,21 @@ var symbols = {
             ["style", "width", '105px']
          ],
          "${_mom1botaoCopy}": [
-            ["color", "background-color", 'rgba(255,0,0,0)'],
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'block'],
+            ["style", "top", '15px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(255,0,0,0)']
+         ],
+         "${_mom1Copy2}": [
+            ["color", "background-color", 'rgba(173,173,173,1.00)'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
@@ -1751,46 +1829,34 @@ var symbols = {
             ["style", "left", '0px'],
             ["style", "top", '15px']
          ],
-         "${__8_25}": [
-            ["style", "top", '-67px'],
-            ["transform", "scaleY", '0.40179'],
-            ["transform", "scaleX", '0.4009'],
-            ["style", "left", '-66px'],
-            ["style", "display", 'block']
-         ],
          "${_momento1Copy}": [
-            ["style", "top", '293px'],
             ["style", "-webkit-transform-origin", [50,100], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,100],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "display", 'none'],
             ["transform", "scaleY", '0.87931'],
-            ["style", "display", 'none']
+            ["style", "top", '293px']
          ],
-         "${_PCopy3}": [
-            ["style", "line-height", 'normal'],
-            ["transform", "rotateZ", '0deg'],
-            ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '292px'],
-            ["style", "width", '49px'],
-            ["style", "top", '127px'],
-            ["style", "font-style", 'normal'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "font-size", '10px']
+         "${_nb}": [
+            ["style", "top", '104px'],
+            ["style", "display", 'block'],
+            ["style", "height", '47px'],
+            ["style", "left", '90px'],
+            ["style", "width", '75px']
          ],
          "${_mom3botao}": [
-            ["style", "top", '-5px'],
+            ["color", "background-color", 'rgba(255,0,0,0.00)'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'block'],
-            ["color", "background-color", 'rgba(255,0,0,0.00)'],
-            ["style", "left", '0px'],
             ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}]
+            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "left", '0px'],
+            ["style", "top", '-5px']
          ],
          "${_nb1Lorem}": [
             ["style", "line-height", '18px'],
@@ -1803,19 +1869,17 @@ var symbols = {
             ["style", "font-family", 'raleway, sans-serif'],
             ["style", "font-size", '12px']
          ],
-         "${_mom1Copy5}": [
-            ["color", "background-color", 'rgba(47,47,47,1.00)'],
-            ["style", "top", '25px'],
+         "${_mom3Copy3}": [
+            ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["transform", "scaleY", '1.20833'],
-            ["style", "height", '111px'],
             ["style", "display", 'none'],
-            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
-            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "left", '115px'],
-            ["style", "width", '464px']
+            ["style", "top", '-5px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(173,173,173,1)']
          ],
          "${_mom1Copy4}": [
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
@@ -1831,20 +1895,27 @@ var symbols = {
             ["style", "left", '115px'],
             ["style", "width", '465px']
          ],
-         "${_NB1}": [
-            ["color", "color", 'rgba(254,192,5,1.00)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '43px'],
-            ["style", "width", '557px'],
-            ["style", "top", '212px'],
-            ["style", "height", '37px'],
-            ["style", "font-family", 'raleway, sans-serif'],
+         "${_PLACLoremCopy5}": [
+            ["style", "line-height", '18px'],
+            ["color", "color", 'rgba(255,255,255,1)'],
+            ["style", "font-weight", 'normal'],
+            ["style", "left", '168px'],
+            ["style", "font-size", '12px'],
+            ["style", "top", '256px'],
+            ["style", "text-align", 'justify'],
             ["style", "display", 'none'],
-            ["style", "font-size", '20px']
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "width", '398px']
          ],
-         "${__2}": [
-            ["style", "top", '22px'],
-            ["style", "left", '83px']
+         "${_momento2Copy}": [
+            ["style", "top", '351px'],
+            ["style", "display", 'none'],
+            ["transform", "scaleY", '0.87931'],
+            ["style", "-webkit-transform-origin", [50,0], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_PLACCopy2}": [
             ["style", "top", '20px'],
@@ -1855,9 +1926,15 @@ var symbols = {
             ["style", "left", '11px'],
             ["style", "width", '94px']
          ],
-         "${_ENSINO}": [
-            ["style", "top", '238px'],
-            ["style", "left", '180px'],
+         "${_NA}": [
+            ["color", "color", 'rgba(254,192,5,1.00)'],
+            ["style", "font-weight", '700'],
+            ["style", "left", '43px'],
+            ["style", "width", '557px'],
+            ["style", "top", '212px'],
+            ["style", "height", '37px'],
+            ["style", "font-family", 'raleway, sans-serif'],
+            ["style", "font-size", '20px'],
             ["style", "display", 'none']
          ],
          "${__6_23}": [
@@ -1872,55 +1949,60 @@ var symbols = {
             ["style", "display", 'block'],
             ["style", "left", '448px']
          ],
-         "${_Text2Copy5}": [
-            ["style", "top", '50px'],
-            ["style", "left", '97px'],
-            ["style", "line-height", '14px']
-         ],
-         "${_NA}": [
-            ["color", "color", 'rgba(254,192,5,1.00)'],
-            ["style", "font-weight", '700'],
-            ["style", "left", '43px'],
-            ["style", "width", '557px'],
-            ["style", "top", '212px'],
-            ["style", "height", '37px'],
-            ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "font-size", '20px'],
-            ["style", "display", 'none']
-         ],
-         "${_mom1botaoCopy3}": [
+         "${_mom1Copy7}": [
             ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "height", '150px'],
+            ["style", "display", 'none'],
+            ["style", "top", '46px'],
+            ["style", "left", '115px'],
+            ["style", "width", '445px']
+         ],
+         "${_botao2}": [
+            ["style", "top", '207px'],
+            ["style", "display", 'none'],
+            ["style", "height", '9px'],
+            ["style", "left", '602px'],
+            ["style", "width", '10px']
+         ],
+         "${_mom1botaoCopy3}": [
+            ["style", "top", '15px'],
             ["transform", "scaleY", '1.20833'],
             ["style", "display", 'none'],
-            ["style", "top", '15px'],
+            ["color", "background-color", 'rgba(255,0,0,0)'],
             ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(255,0,0,0)']
+            ["style", "-webkit-transform-origin", [50,150], {valueTemplate:'@@0@@% @@1@@%'} ],
+            ["style", "-moz-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-ms-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "msTransformOrigin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}],
+            ["style", "-o-transform-origin", [50,150],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_mom3}": [
+            ["style", "top", '-5px'],
+            ["transform", "scaleY", '1.20833'],
+            ["style", "display", 'none'],
+            ["color", "background-color", 'rgba(47,47,47,1.00)'],
+            ["style", "left", '0px'],
             ["style", "-webkit-transform-origin", [50,-50], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["transform", "scaleY", '1.20833'],
-            ["style", "display", 'none'],
-            ["style", "top", '-5px'],
-            ["style", "left", '0px'],
-            ["color", "background-color", 'rgba(47,47,47,1.00)']
+            ["style", "-o-transform-origin", [50,-50],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_momento2}": [
+            ["style", "display", 'none'],
+            ["style", "top", '351px'],
+            ["transform", "scaleY", '0.87931'],
             ["style", "-webkit-transform-origin", [50,0], {valueTemplate:'@@0@@% @@1@@%'} ],
             ["style", "-moz-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "-ms-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
             ["style", "msTransformOrigin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "-o-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}],
-            ["style", "display", 'none'],
-            ["transform", "scaleY", '0.87931'],
-            ["style", "top", '351px']
+            ["style", "-o-transform-origin", [50,0],{valueTemplate:'@@0@@% @@1@@%'}]
          ],
          "${_mom3Copy}": [
             ["color", "background-color", 'rgba(47,47,47,1.00)'],
@@ -1971,7 +2053,7 @@ var symbols = {
             "na": 14000
          },
          timeline: [
-            { id: "eid377", tween: [ "style", "${_NA}", "display", 'block', { fromValue: 'none'}], position: 14500, duration: 0, easing: "easeOutQuad" },
+            { id: "eid221", tween: [ "style", "${__9}", "top", '104px', { fromValue: '104px'}], position: 500, duration: 0, easing: "easeOutQuad" },
             { id: "eid116", tween: [ "style", "${_Lightbox}", "top", '198px', { fromValue: '71px'}], position: 500, duration: 500, easing: "easeOutQuad" },
             { id: "eid129", tween: [ "style", "${_Lightbox}", "top", '198px', { fromValue: '71px'}], position: 1500, duration: 500, easing: "easeOutQuad" },
             { id: "eid139", tween: [ "style", "${_Lightbox}", "top", '153px', { fromValue: '71px'}], position: 5000, duration: 500, easing: "easeOutQuad" },
@@ -2102,7 +2184,8 @@ var symbols = {
             { id: "eid331", tween: [ "style", "${_Formadores}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid332", tween: [ "style", "${_Formadores}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0, easing: "easeOutQuad" },
             { id: "eid334", tween: [ "style", "${_Formadores}", "display", 'none', { fromValue: 'block'}], position: 1500, duration: 0, easing: "easeOutQuad" },
-            { id: "eid106", tween: [ "style", "${_LoremIpsumreplicarparacadaponto}", "top", '187px', { fromValue: '187px'}], position: 0, duration: 0, easing: "easeOutQuad" },
+            { id: "eid128", tween: [ "style", "${_BOTAOCOMECO}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0, easing: "easeOutQuad" },
+            { id: "eid106", tween: [ "style", "${_LoremIpsumreplicarparacadaponto}", "top", '191px', { fromValue: '191px'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid13", tween: [ "style", "${_Slider1}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
             { id: "eid360", tween: [ "style", "${_NB1}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid361", tween: [ "style", "${_NB1}", "display", 'block', { fromValue: 'none'}], position: 5500, duration: 0, easing: "easeOutQuad" },
@@ -2150,10 +2233,10 @@ var symbols = {
             { id: "eid303", tween: [ "style", "${__6_23}", "display", 'none', { fromValue: 'block'}], position: 9000, duration: 0, easing: "easeOutQuad" },
             { id: "eid190", tween: [ "style", "${_mom1Copy8}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid223", tween: [ "style", "${_mom1Copy8}", "display", 'block', { fromValue: 'none'}], position: 9500, duration: 0, easing: "easeOutQuad" },
-            { id: "eid397", tween: [ "style", "${__5_23Copy}", "display", 'block', { fromValue: 'none'}], position: 7000, duration: 0, easing: "easeOutQuad" },
             { id: "eid191", tween: [ "style", "${_momentoPLACCopy}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid225", tween: [ "style", "${_momentoPLACCopy}", "display", 'block', { fromValue: 'none'}], position: 9500, duration: 0, easing: "easeOutQuad" },
             { id: "eid274", tween: [ "style", "${_momentoPLACCopy}", "display", 'none', { fromValue: 'block'}], position: 11437, duration: 0, easing: "easeOutQuad" },
+            { id: "eid397", tween: [ "style", "${__5_23Copy}", "display", 'block', { fromValue: 'none'}], position: 7000, duration: 0, easing: "easeOutQuad" },
             { id: "eid110", tween: [ "style", "${_mom1Copy5}", "display", 'block', { fromValue: 'none'}], position: 2750, duration: 0 },
             { id: "eid111", tween: [ "style", "${_mom1Copy5}", "display", 'none', { fromValue: 'block'}], position: 3250, duration: 0 },
             { id: "eid216", tween: [ "style", "${__9}", "left", '452px', { fromValue: '452px'}], position: 500, duration: 0, easing: "easeOutQuad" },
@@ -2167,7 +2250,8 @@ var symbols = {
             { id: "eid7", tween: [ "style", "${_LoremIpsumreplicarparacadaponto}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
             { id: "eid112", tween: [ "style", "${_mom2Copy}", "display", 'block', { fromValue: 'none'}], position: 3250, duration: 0 },
             { id: "eid113", tween: [ "style", "${_mom2Copy}", "display", 'none', { fromValue: 'block'}], position: 3750, duration: 0 },
-            { id: "eid221", tween: [ "style", "${__9}", "top", '104px', { fromValue: '104px'}], position: 500, duration: 0, easing: "easeOutQuad" },
+            { id: "eid186", tween: [ "style", "${_PLACCopy6}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
+            { id: "eid217", tween: [ "style", "${_PLACCopy6}", "display", 'block', { fromValue: 'none'}], position: 9500, duration: 0, easing: "easeOutQuad" },
             { id: "eid118", tween: [ "style", "${_Lightbox}", "left", '25px', { fromValue: '-272px'}], position: 500, duration: 500, easing: "easeOutQuad" },
             { id: "eid132", tween: [ "style", "${_Lightbox}", "left", '25px', { fromValue: '-272px'}], position: 1500, duration: 500, easing: "easeOutQuad" },
             { id: "eid142", tween: [ "style", "${_Lightbox}", "left", '25px', { fromValue: '-272px'}], position: 5000, duration: 500, easing: "easeOutQuad" },
@@ -2204,7 +2288,6 @@ var symbols = {
             { id: "eid256", tween: [ "style", "${_mom3Copy3}", "display", 'none', { fromValue: 'block'}], position: 11000, duration: 0, easing: "easeOutQuad" },
             { id: "eid257", tween: [ "style", "${_mom3Copy3}", "display", 'none', { fromValue: 'none'}], position: 11250, duration: 0, easing: "easeOutQuad" },
             { id: "eid261", tween: [ "style", "${_mom3Copy3}", "display", 'block', { fromValue: 'none'}], position: 11500, duration: 0, easing: "easeOutQuad" },
-            { id: "eid128", tween: [ "style", "${_BOTAOCOMECO}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0, easing: "easeOutQuad" },
             { id: "eid176", tween: [ "style", "${_mom3Copy5}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid207", tween: [ "style", "${_mom3Copy5}", "display", 'block', { fromValue: 'none'}], position: 9500, duration: 0, easing: "easeOutQuad" },
             { id: "eid6", tween: [ "style", "${_botao1}", "left", '6px', { fromValue: '293px'}], position: 0, duration: 500, easing: "easeOutQuad" },
@@ -2225,8 +2308,7 @@ var symbols = {
             { id: "eid41", tween: [ "style", "${_momento1}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0, easing: "easeOutQuad" },
             { id: "eid45", tween: [ "style", "${_momento1}", "display", 'none', { fromValue: 'block'}], position: 5000, duration: 0, easing: "easeOutQuad" },
             { id: "eid427", tween: [ "style", "${_Avancado}", "display", 'block', { fromValue: 'none'}], position: 14500, duration: 0 },
-            { id: "eid186", tween: [ "style", "${_PLACCopy6}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutQuad" },
-            { id: "eid217", tween: [ "style", "${_PLACCopy6}", "display", 'block', { fromValue: 'none'}], position: 9500, duration: 0, easing: "easeOutQuad" },
+            { id: "eid377", tween: [ "style", "${_NA}", "display", 'block', { fromValue: 'none'}], position: 14500, duration: 0, easing: "easeOutQuad" },
             { id: "eid390", tween: [ "style", "${_nbase2}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0, easing: "easeOutQuad" },
             { id: "eid395", tween: [ "style", "${_nbase2}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0, easing: "easeOutQuad" },
             { id: "eid398", tween: [ "style", "${_nbase2}", "display", 'block', { fromValue: 'none'}], position: 7000, duration: 0, easing: "easeOutQuad" },
@@ -2399,10 +2481,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/2_2_1.png','0px','0px']
    },
    {
-      type: 'image',
-      id: '_2_2',
       rect: ['2px','1px','89px','89px','auto','auto'],
+      id: '_2_2',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/2_2.png','0px','0px']
    },
    {
@@ -2430,32 +2512,32 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/6_2.png','0px','0px']
    },
    {
-      type: 'text',
+      rect: ['38px','28px','auto','auto','auto','auto'],
       id: 'formadores',
       text: 'P',
-      rect: ['38px','28px','auto','auto','auto','auto'],
-      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none','']
+      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none',''],
+      type: 'text'
    },
    {
-      type: 'text',
+      rect: ['130px','53px','auto','auto','auto','auto'],
       id: 'L',
       text: 'L',
-      rect: ['130px','53px','auto','auto','auto','auto'],
-      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none','']
+      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none',''],
+      type: 'text'
    },
    {
-      type: 'text',
+      rect: ['224px','28px','auto','auto','auto','auto'],
       id: 'A',
       text: 'A',
-      rect: ['224px','28px','auto','auto','auto','auto'],
-      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none','']
+      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none',''],
+      type: 'text'
    },
    {
-      type: 'text',
+      rect: ['309px','53px','auto','auto','auto','auto'],
       id: 'C',
       text: 'C',
-      rect: ['309px','53px','auto','auto','auto','auto'],
-      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none','']
+      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none',''],
+      type: 'text'
    },
    {
       id: 'Group',
@@ -2463,10 +2545,10 @@ var symbols = {
       rect: ['0','19px','360','72px','auto','auto'],
       c: [
       {
-         type: 'image',
-         id: '_2_2Copy',
          rect: ['3px','1px','89px','56px','auto','auto'],
+         id: '_2_2Copy',
          transform: [[0,0],[],[],['1.01574','1.01574']],
+         type: 'image',
          fill: ['rgba(0,0,0,0)','images/2_2.png','0px','0px']
       },
       {
@@ -2643,18 +2725,18 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/3_2.png','0px','0px']
    },
    {
-      type: 'text',
       rect: ['12px','12px','52px','23px','auto','auto'],
+      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none',''],
       id: 'nb1',
       text: 'Núcleo<br>de Base 1',
       align: 'center',
-      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none','']
+      type: 'text'
    },
    {
-      type: 'image',
-      id: '_3_2Copy',
       rect: ['2px','0px','75px','47px','auto','auto'],
+      id: '_3_2Copy',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/3_2.png','0px','0px']
    }],
    symbolInstances: [
@@ -2744,10 +2826,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/4_2_1.png','0px','0px']
    },
    {
-      rect: ['1px','1px','89px','89px','auto','auto'],
-      id: '_4_2',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      id: '_4_2',
       type: 'image',
+      rect: ['1px','1px','89px','89px','auto','auto'],
       fill: ['rgba(0,0,0,0)','images/4_2.png','0px','0px']
    }],
    symbolInstances: [
@@ -2804,25 +2886,25 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/5_2_1.png','0px','0px']
    },
    {
-      type: 'image',
-      id: '_5_2',
       rect: ['0px','1px','76px','47px','auto','auto'],
+      id: '_5_2',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/5_2.png','0px','0px']
    },
    {
-      type: 'text',
       rect: ['14px','11px','64px','26px','auto','auto'],
+      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none',''],
       id: 'nb2Copy',
       text: 'Núcleo<br>de Base 2<br>',
       align: 'center',
-      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none','']
+      type: 'text'
    },
    {
-      type: 'image',
-      id: '_5_2Copy',
       rect: ['0px','1px','76px','47px','auto','auto'],
+      id: '_5_2Copy',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/5_2.png','0px','0px']
    }],
    symbolInstances: [
@@ -2909,10 +2991,10 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/6_2_1.png','0px','0px']
    },
    {
-      rect: ['-1px','1px','174px','105px','auto','auto'],
-      id: '_6_2',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      id: '_6_2',
       type: 'image',
+      rect: ['-1px','1px','174px','105px','auto','auto'],
       fill: ['rgba(0,0,0,0)','images/6_2.png','0px','0px']
    }],
    symbolInstances: [
@@ -2974,18 +3056,18 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/8_2_1.png','0px','0px']
    },
    {
-      type: 'image',
-      id: '_8_22',
       rect: ['-4px','1px','88px','89px','auto','auto'],
+      id: '_8_22',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/8_2.png','0px','0px']
    },
    {
-      type: 'text',
+      rect: ['19px','30px','auto','auto','auto','auto'],
       id: 'tccCopy',
       text: 'TCC',
-      rect: ['19px','30px','auto','auto','auto','auto'],
-      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none','']
+      font: ['raleway, sans-serif',24,'rgba(255,255,255,1.00)','normal','none',''],
+      type: 'text'
    },
    {
       transform: [[0,0],[],[],['1.01574','1.01574']],
@@ -3076,19 +3158,19 @@ var symbols = {
       fill: ['rgba(0,0,0,0)','images/9_2_1.png','0px','0px']
    },
    {
-      type: 'image',
-      id: '_9_2',
       rect: ['-3px','0px','76px','47px','auto','auto'],
+      id: '_9_2',
       transform: [[0,0],[],[],['1.01574','1.01574']],
+      type: 'image',
       fill: ['rgba(0,0,0,0)','images/9_2.png','0px','0px']
    },
    {
-      type: 'text',
       rect: ['12px','11px','56px','26px','auto','auto'],
+      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none',''],
       id: 'naCopy',
       text: 'Núcleos<br>Avançados<br>',
       align: 'center',
-      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none','']
+      type: 'text'
    },
    {
       transform: [[0,0],[],[],['1.01574','1.01574']],
@@ -3178,37 +3260,28 @@ var symbols = {
    {
       id: '_7_2_1_v2',
       type: 'image',
-      rect: ['0px','0px','174px','85px','auto','auto'],
-      fill: ['rgba(0,0,0,0)','images/7_2_1_v.png','0px','0px']
+      rect: ['0px','0px','174px','78px','auto','auto'],
+      fill: ['rgba(0,0,0,0)','images/7_2_b2.png','0px','0px']
    },
    {
       id: '_7_2_v2',
       type: 'image',
-      rect: ['0px','0px','174px','85px','auto','auto'],
-      fill: ['rgba(0,0,0,0)','images/7_2_v.png','0px','0px']
-   },
-   {
-      rect: ['22px','22px','49px','auto','auto','auto'],
-      font: ['raleway, sans-serif',10,'rgba(255,255,255,1.00)','bold','none','normal'],
-      align: 'left',
-      id: 'P',
-      text: 'Núcleos<br>',
-      transform: [],
-      type: 'text'
+      rect: ['0px','0px','174px','77px','auto','auto'],
+      fill: ['rgba(0,0,0,0)','images/7_2_b1.png','0px','0px']
    },
    {
       type: 'text',
-      rect: ['97px','50px','auto','auto','auto','auto'],
-      id: 'Text2Copy',
-      text: '       Específicos',
+      font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','500','none','normal'],
+      rect: ['30px','47px','113px','13px','auto','auto'],
+      id: 'P',
+      text: 'Núcleos Específicos',
       align: 'left',
-      font: ['raleway, sans-serif',10,'rgba(255,255,255,1)','bold','none','normal']
+      transform: []
    },
    {
-      type: 'image',
       id: '_7_2_v2Copy',
-      opacity: 0,
-      rect: ['0px','0px','174px','85px','auto','auto'],
+      type: 'image',
+      rect: ['0px','0px','174px','77px','auto','auto'],
       fill: ['rgba(0,0,0,0)','images/7_2_v.png','0px','0px']
    }],
    symbolInstances: [
@@ -3218,37 +3291,33 @@ var symbols = {
       "Base State": {
          "${__7_2_v2}": [
             ["style", "top", '0px'],
-            ["style", "height", '85px'],
+            ["style", "height", '77px'],
             ["style", "opacity", '0.000000'],
             ["style", "left", '0px'],
             ["style", "width", '174px']
-         ],
-         "${_Text2Copy2}": [
-            ["style", "top", '153px'],
-            ["style", "left", '371px'],
-            ["style", "line-height", 'normal']
-         ],
-         "${_Text2Copy}": [
-            ["style", "top", '50px'],
-            ["style", "left", '97px'],
-            ["style", "line-height", '14px']
-         ],
-         "${symbolSelector}": [
-            ["style", "height", '87px'],
-            ["style", "width", '175px']
          ],
          "${_P}": [
             ["style", "line-height", '14px'],
             ["transform", "rotateZ", '0deg'],
             ["color", "color", 'rgba(255,255,255,1)'],
-            ["style", "font-weight", 'bold'],
-            ["style", "left", '22px'],
-            ["style", "width", '49px'],
-            ["style", "top", '22px'],
+            ["style", "font-weight", '500'],
+            ["style", "left", '30px'],
+            ["style", "width", '113px'],
+            ["style", "top", '47px'],
             ["style", "text-align", 'left'],
             ["style", "font-style", 'normal'],
             ["style", "font-family", 'raleway, sans-serif'],
-            ["style", "font-size", '10px']
+            ["style", "height", '13px'],
+            ["style", "font-size", '12px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '87px'],
+            ["style", "width", '175px']
+         ],
+         "${_Text2Copy2}": [
+            ["style", "top", '153px'],
+            ["style", "left", '371px'],
+            ["style", "line-height", 'normal']
          ],
          "${_PCopy}": [
             ["style", "line-height", 'normal'],
@@ -3264,14 +3333,14 @@ var symbols = {
          ],
          "${__7_2_v2Copy}": [
             ["style", "top", '0px'],
-            ["style", "height", '85px'],
+            ["style", "height", '77px'],
             ["style", "opacity", '0'],
             ["style", "left", '0px'],
             ["style", "width", '174px']
          ],
          "${__7_2_1_v2}": [
             ["style", "top", '0px'],
-            ["style", "height", '85px'],
+            ["style", "height", '78px'],
             ["style", "left", '0px'],
             ["style", "width", '174px']
          ]
@@ -3457,84 +3526,84 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
          type: 'text',
+         rect: ['13px','6px','438px','162px','undefined','undefined'],
          id: 'Scrolling-ContentCopy2',
          text: '<br>Utilizar as TDIC no enfrentamento dos desafios da educação matemática hoje e trabalhar cooperativamente tendo como mediador a tecnologia e a aprendizagem da matemática.<br><br><br>Realizar leituras e produção de textos multimodais ou multissemióticos (hipermídia), além de pensar a escola como agência de letramento para a reflexão e a construção do conhecimento crítico sobre a hipermídia. <br><br><br>Trabalhar as relações entre tempo e história, a produção de memórias individuais e coletivas e as narrativas da história e suas reinvenções com os impactos tecnológicos. <br><br><br>Empregar as TDIC no processo de construção do conhecimento geográfico. E, também, a funcionalidade de recortes espaciais contemplando o trânsito entre escalas: global, regional, sub-regional e local. <br><br><br>Utilizar e a analisar criticamente os objetos digitais de aprendizagem, os simuladores virtuais disponíveis na web como facilitadores da aprendizagem e aprender a produzir e  veicular documentos em vídeo para a apropriação de saberes químicos.<br><br><br>Adquirir conhecimentos da Física e cultura científica, produção e circulação no contexto da cibercultura: papel das tecnologias da web 2.0 (blogs, wikis, youtube, tumblrs). <br><br><br>Incorporar as Tecnologias Digitais de Informação e Comunicação nos processos de ensino e de aprendizagem de Biologia, no segmento do Ensino Médio.<br><br><br>Fazer a articulação da cultura digital e do ensino-aprendizagem, além de trabalhar questões epistemológicas e metodológicas em contextos multiculturais e as TDIC e suas possibilidades de promoção de aprendizagens significativas.<br><br><br>Estudar Filosofia, sua relação com as tecnologias e a cultura e, em particular, com o universo contemporâneo da Cultura Digital, com foco na discussão relativa à cidadania digital e às suas implicações na educação.',
          align: 'justify',
-         rect: ['13px','6px','438px','162px','undefined','undefined']
+         font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','9px','auto','auto','auto','auto'],
          id: 'TextCopy20',
          text: 'Aprendizagem de Matemática no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','9px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','102px','auto','auto','auto','auto'],
          id: 'TextCopy19',
          text: 'Aprendizagem de Língua Portuguesa no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','102px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','190px','auto','auto','auto','auto'],
          id: 'TextCopy18',
          text: 'Aprendizagem de História no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','190px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','281px','auto','auto','auto','auto'],
          id: 'TextCopy17',
          text: 'Aprendizagem de Geografia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','281px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','370px','auto','auto','auto','auto'],
          id: 'TextCopy16',
          text: 'Aprendizagem de Química no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','370px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','478px','auto','auto','auto','auto'],
          id: 'TextCopy15',
          text: 'Aprendizagem de Física no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','478px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','569px','auto','auto','auto','auto'],
          id: 'TextCopy14',
          text: 'Aprendizagem de Biologia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','569px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','659px','auto','auto','auto','auto'],
          id: 'TextCopy13',
          text: 'Aprendizagem de Sociologia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','659px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','767px','auto','auto','auto','auto'],
          id: 'TextCopy12',
          text: 'Aprendizagem de Filosofia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','767px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       }]
    },
    {
@@ -3755,44 +3824,44 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         rect: ['3px','0px','506px','161px','undefined','undefined'],
          font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
+         type: 'text',
          id: 'Scrolling-Content',
          text: '<br>Panorama de cultura digital ou cibercultura. A convergência das mídias. O computador como metamídia. Relações entre o verbal, o visual e o sonoro. Narrativa transmídia. Implicações para a educação.<br><br><br>Construir competências referentes ao Letramento Estatístico – leitura e interpretação de dados expressos em diferentes representações, organização e apresentação de dados, obtenção de medidas de tendência central e dispersão. Exercitar o pensamento crítico a partir da reflexão sobre dados de uma pesquisa, de inferências e tomada de decisões. Utilizar tecnologias digitais, inclusive tecnologias móveis, para o tratamento da informação. Analisar uma pesquisa, identificando eventuais distorções nas representações utilizadas para a comunicação de resultados. Elaborar e desenvolver uma pesquisa para resolução de problemáticas da realidade onde a escola está imersa.<br><br><br>Estudar Ética na Cultura Digital no contexto das Tecnologias Digitais de Informação e Comunicação, suas várias manifestações fenomênicas e as implicações na vida cotidiana, na formação cultural e na educação.<br><br><br>Conceber jogo como fenômeno cultural e visualizar sua importância como elemento lúdico na educação. Contextualizar jogos digitais. Estudar a relação entre: jogos digitais e os nativos digitais, jogos digitais e seu potencial socialmente transformador, jogos digitais e as potencialidades para o processo de ensino-aprendizagem, jogos digitais e mediação docente. Criar um plano de intervenção no espaço educativo com o uso dos jogos digitais. Desenvolver jogos digitais com fins educativos.',
          align: 'justify',
-         type: 'text'
+         rect: ['3px','0px','506px','161px','undefined','undefined']
       },
       {
-         rect: ['3px','4px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text3',
          text: 'Linguagens do nosso tempo:<br>',
          align: 'justify',
-         type: 'text'
+         rect: ['3px','4px','auto','auto','auto','auto']
       },
       {
-         rect: ['3px','95px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text3Copy',
          text: 'Tecnologias digitais na análise e representação da informação:<br>',
          align: 'justify',
-         type: 'text'
+         rect: ['3px','95px','auto','auto','auto','auto']
       },
       {
-         rect: ['3px','277px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text3Copy2',
          text: 'Ética na Cultura Digital:<br>',
          align: 'justify',
-         type: 'text'
+         rect: ['3px','277px','auto','auto','auto','auto']
       },
       {
-         rect: ['3px','366px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text3Copy3',
          text: 'Jogos Digitais e aprendizagem:',
          align: 'justify',
-         type: 'text'
+         rect: ['3px','366px','auto','auto','auto','auto']
       }]
    },
    {
@@ -3907,12 +3976,12 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         font: ['Arial',12,'rgba(255,255,255,1.00)','normal','none','normal'],
          type: 'text',
+         rect: ['13px','6px','396px','162px','undefined','undefined'],
          id: 'Scrolling-Content',
          text: 'Especifico 2<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.',
          align: 'auto',
-         rect: ['13px','6px','396px','162px','undefined','undefined']
+         font: ['Arial',12,'rgba(255,255,255,1.00)','normal','none','normal']
       }]
    },
    {
@@ -3994,76 +4063,76 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         rect: ['13px','6px','398px','162px','undefined','undefined'],
          font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
+         type: 'text',
          id: 'Scrolling-ContentCopy',
          text: '<br>Traçar um panorama de apropriação das TDIC nas escolas brasileiras e problematizar o papel dos profissionais da educação na formação para integração das TDIC ao currículo, no contexto da cultura digital. <br><br><br><br>Estudar e analisar o uso, a adaptação e a criação de peças e serviços em Tecnologia Assistiva na perspectiva da Educação Inclusiva.<br><br><br>Trabalhar a Cultura Digital e os Núcleos de Ação Pedagógica na Educação Infantil visando a pedagogias e artefatos Culturais na Infância.<br><br><br>Refletir a respeito das possibilidades e implicações do uso de tecnologias digitais, nos anos iniciais, a partir de três eixos fundantes: o do desenvolvimento, o da aprendizagem e o da pesquisa.<br><br><br>Promover um aprofundamento reflexivo sobre as práticas corporais presentes na escola e seus possíveis atravessamentos pelas TDIC.<br><br><br>Buscar o contexto das artes na escola e suas abordagens educativas. E também pensar as relações entre Arte, tecnologia e a disseminação das imagens. <br><br><br>Trabalhar, baseados na abordagem comunicativa, aspectos conceituais e recursos tecnológicos digitais para o ensino de línguas estrangeiras. Com isso, visa à reflexão da prática docente e ao estímulo da pesquisa em rede.<br>',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','6px','398px','162px','undefined','undefined']
       },
       {
-         rect: ['13px','10px','386px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text',
          text: 'Formação de Educadores na Cultura Digital',
          align: 'left',
-         type: 'text'
+         rect: ['13px','10px','386px','auto','auto','auto']
       },
       {
-         rect: ['13px','89px','431px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy',
          text: 'Gestão',
          align: 'left',
-         type: 'text'
+         rect: ['13px','89px','431px','auto','auto','auto']
       },
       {
-         rect: ['13px','119px','360px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy2',
          text: 'Tecnologias Assistivas',
          align: 'left',
-         type: 'text'
+         rect: ['13px','119px','360px','auto','auto','auto']
       },
       {
-         rect: ['13px','189px','373px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy3',
          text: 'A Prática Docente na Educação Infantil e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','189px','373px','auto','auto','auto']
       },
       {
-         rect: ['13px','533px','365px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy4',
          text: 'Aprendizagem de Língua Estrangeira e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','533px','365px','auto','auto','auto']
       },
       {
-         rect: ['13px','279px','365px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy23',
          text: 'A Prática Docente no Ensino Fundamental I e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','279px','365px','auto','auto','auto']
       },
       {
-         rect: ['13px','369px','365px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy21',
          text: 'Educação Física e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','369px','365px','auto','auto','auto']
       },
       {
-         rect: ['13px','441px','365px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy22',
          text: 'Aprendizagem de Artes Visuais e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','441px','365px','auto','auto','auto']
       }]
    },
    {
@@ -4212,84 +4281,84 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         rect: ['13px','6px','438px','162px','undefined','undefined'],
          font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
+         type: 'text',
          id: 'Scrolling-ContentCopy2',
          text: '<br>Utilizar as TDIC no enfrentamento dos desafios da educação matemática hoje e trabalhar cooperativamente tendo como mediador a tecnologia e a aprendizagem da matemática.<br><br><br>Realizar leituras e produção de textos multimodais ou multissemióticos (hipermídia), além de pensar a escola como agência de letramento para a reflexão e a construção do conhecimento crítico sobre a hipermídia. <br><br><br>Trabalhar as relações entre tempo e história, a produção de memórias individuais e coletivas e as narrativas da história e suas reinvenções com os impactos tecnológicos. <br><br><br>Empregar as TDIC no processo de construção do conhecimento geográfico. E, também, a funcionalidade de recortes espaciais contemplando o trânsito entre escalas: global, regional, sub-regional e local. <br><br><br>Utilizar e a analisar criticamente os objetos digitais de aprendizagem, os simuladores virtuais disponíveis na web como facilitadores da aprendizagem e aprender a produzir e  veicular documentos em vídeo para a apropriação de saberes químicos.<br><br><br>Adquirir conhecimentos da Física e cultura científica, produção e circulação no contexto da cibercultura: papel das tecnologias da web 2.0 (blogs, wikis, youtube, tumblrs). <br><br><br>Incorporar as Tecnologias Digitais de Informação e Comunicação nos processos de ensino e de aprendizagem de Biologia, no segmento do Ensino Médio.<br><br><br>Fazer a articulação da cultura digital e do ensino-aprendizagem, além de trabalhar questões epistemológicas e metodológicas em contextos multiculturais e as TDIC e suas possibilidades de promoção de aprendizagens significativas.<br><br><br>Estudar Filosofia, sua relação com as tecnologias e a cultura e, em particular, com o universo contemporâneo da Cultura Digital, com foco na discussão relativa à cidadania digital e às suas implicações na educação.',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','6px','438px','162px','undefined','undefined']
       },
       {
-         rect: ['13px','9px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'Text',
          text: 'Aprendizagem de Matemática no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','9px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','102px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy',
          text: 'Aprendizagem de Língua Portuguesa no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','102px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','190px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy2',
          text: 'Aprendizagem de História no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','190px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','281px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy3',
          text: 'Aprendizagem de Geografia no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','281px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','370px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy4',
          text: 'Aprendizagem de Química no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','370px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','478px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy5',
          text: 'Aprendizagem de Física no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','478px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','569px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy6',
          text: 'Aprendizagem de Biologia no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','569px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','659px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy9',
          text: 'Aprendizagem de Sociologia no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','659px','auto','auto','auto','auto']
       },
       {
-         rect: ['13px','767px','auto','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy10',
          text: 'Aprendizagem de Filosofia no Ensino Médio e TDIC',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','767px','auto','auto','auto','auto']
       }]
    },
    {
@@ -4437,52 +4506,52 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         rect: ['13px','6px','398px','162px','undefined','undefined'],
          font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
+         type: 'text',
          id: 'Scrolling-ContentCopy3',
          text: '<br>Criar condições para que os cursistas reflitam a respeito do potencial das ferramentas para o enfrentamento dos desafios da educação matemática hoje. <br><br><br>Trabalhar os multiletramentos e as práticas contemporâneas de leitura e escrita pensando em ações e processos da WEB 2.0: curadoria, redistribuição de conteúdos e informações, remixagem apreciação, as prática de seguir, curtir, compartilhar e comentar.<br><br><br>Pensar os sentidos atribuídos pelas tecnologias contemporâneas ao tempo e seus inter-relacionamentos com os suportes microinformáticos. Trabalhar a memória e os seus suportes e registros no contexto da cultura digital.<br><br><br>Empregar Tecnologias Digitais de Informação e Comunicação (TDIC) no processo de construção do conhecimento e do ensino-aprendizagem da geografia. <br><br><br>Abordar as relações entre ciência e as TDIC, os desafios atuais do ensino de ciências e as potencialidades das TDIC nesse ensino.<br>',
          align: 'justify',
-         type: 'text'
+         rect: ['13px','6px','398px','162px','undefined','undefined']
       },
       {
-         rect: ['13px','10px','386px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy31',
          text: 'Aprendizagem de Matemática no Ensino Fundamental e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','10px','386px','auto','auto','auto']
       },
       {
-         rect: ['13px','102px','419px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy32',
          text: 'Aprendizagem de Língua Portuguesa no Ensino Fundamental e TDIC<br>',
          align: 'left',
-         type: 'text'
+         rect: ['13px','102px','419px','auto','auto','auto']
       },
       {
-         rect: ['13px','209px','386px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy33',
          text: 'Aprendizagem de História no Ensino Fundamental e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','209px','386px','auto','auto','auto']
       },
       {
-         rect: ['13px','317px','386px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy35',
          text: 'Aprendizagem de Geografia no Ensino Fundamental e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','317px','386px','auto','auto','auto']
       },
       {
-         rect: ['13px','406px','386px','auto','auto','auto'],
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
+         type: 'text',
          id: 'TextCopy36',
          text: 'Aprendizagem de Ciências no Ensino Fundamental e TDIC',
          align: 'left',
-         type: 'text'
+         rect: ['13px','406px','386px','auto','auto','auto']
       }]
    },
    {
@@ -4765,14 +4834,14 @@ var symbols = {
       type: 'rect',
       id: 'content',
       stroke: [0,'rgb(0,0,0)','none'],
-      rect: ['-42px','8px','458px','188px','undefined','undefined'],
+      rect: ['-42px','8px','458px','169px','undefined','undefined'],
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
          font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
          type: 'text',
          id: 'Scrolling-ContentCopy2',
-         text: '<br>Traçar um panorama de apropriação das TDIC nas escolas brasileiras e problematizar o papel dos profissionais da educação na formação para integração das TDIC ao currículo, no contexto da cultura digital. <br><br><br><br>Estudar e analisar o uso, a adaptação e a criação de peças e serviços em Tecnologia Assistiva na perspectiva da Educação Inclusiva.<br><br><br>Trabalhar a Cultura Digital e os Núcleos de Ação Pedagógica na Educação Infantil visando a pedagogias e artefatos Culturais na Infância.<br><br><br>Refletir a respeito das possibilidades e implicações do uso de tecnologias digitais, nos anos iniciais, a partir de três eixos fundantes: o do desenvolvimento, o da aprendizagem e o da pesquisa.<br><br><br>Promover um aprofundamento reflexivo sobre as práticas corporais presentes na escola e seus possíveis atravessamentos pelas TDIC.<br><br><br>Buscar o contexto das artes na escola e suas abordagens educativas. E também pensar as relações entre Arte, tecnologia e a disseminação das imagens. <br><br><br>Trabalhar, baseados na abordagem comunicativa, aspectos conceituais e recursos tecnológicos digitais para o ensino de línguas estrangeiras. Com isso, visa à reflexão da prática docente e ao estímulo da pesquisa em rede.<br>',
+         text: '<br>Traçar um panorama de apropriação das TDIC nas escolas brasileiras e problematizar o papel dos profissionais da educação na formação para integração das TDIC ao currículo, no contexto da cultura digital. <br><br><br>Analisar problemas e estratégias de solução, evidenciados com o uso das TDIC na escola. Trabalhar em equipe as parcerias e a colaboração intra e interinstitucionais a fim de formar redes colaborativas.  Pensar a gestão das tecnologias na escola, incluindo-as na gestão da sala de aula, na gestão de informações e de espaços.<br><br><br>Estudar e analisar o uso, a adaptação e a criação de peças e serviços em Tecnologia Assistiva na perspectiva da Educação Inclusiva.<br><br><br>Trabalhar a Cultura Digital e os Núcleos de Ação Pedagógica na Educação Infantil visando a pedagogias e artefatos Culturais na Infância.<br><br><br>Refletir a respeito das possibilidades e implicações do uso de tecnologias digitais, nos anos iniciais, a partir de três eixos fundantes: o do desenvolvimento, o da aprendizagem e o da pesquisa.<br><br><br>Promover um aprofundamento reflexivo sobre as práticas corporais presentes na escola e seus possíveis atravessamentos pelas TDIC.<br><br><br>Buscar o contexto das artes na escola e suas abordagens educativas. E também pensar as relações entre Arte, tecnologia e a disseminação das imagens. <br><br><br>Trabalhar, baseados na abordagem comunicativa, aspectos conceituais e recursos tecnológicos digitais para o ensino de línguas estrangeiras. Com isso, visa à reflexão da prática docente e ao estímulo da pesquisa em rede.<br>',
          align: 'justify',
          rect: ['13px','6px','398px','162px','undefined','undefined']
       },
@@ -4790,7 +4859,7 @@ var symbols = {
          id: 'TextCopy6',
          text: 'Gestão',
          align: 'left',
-         rect: ['13px','89px','431px','auto','auto','auto']
+         rect: ['13px','104px','431px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4798,7 +4867,7 @@ var symbols = {
          id: 'TextCopy5',
          text: 'Tecnologias Assistivas',
          align: 'left',
-         rect: ['13px','119px','360px','auto','auto','auto']
+         rect: ['13px','229px','360px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4806,7 +4875,7 @@ var symbols = {
          id: 'TextCopy4',
          text: 'A Prática Docente na Educação Infantil e TDIC',
          align: 'left',
-         rect: ['13px','189px','373px','auto','auto','auto']
+         rect: ['13px','299px','373px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4814,7 +4883,7 @@ var symbols = {
          id: 'TextCopy3',
          text: 'Aprendizagem de Língua Estrangeira e TDIC',
          align: 'left',
-         rect: ['13px','533px','365px','auto','auto','auto']
+         rect: ['13px','643px','365px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4822,7 +4891,7 @@ var symbols = {
          id: 'TextCopy2',
          text: 'A Prática Docente no Ensino Fundamental I e TDIC',
          align: 'left',
-         rect: ['13px','279px','365px','auto','auto','auto']
+         rect: ['13px','389px','365px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4830,7 +4899,7 @@ var symbols = {
          id: 'TextCopy',
          text: 'Educação Física e TDIC',
          align: 'left',
-         rect: ['13px','369px','365px','auto','auto','auto']
+         rect: ['13px','479px','365px','auto','auto','auto']
       },
       {
          font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
@@ -4838,7 +4907,7 @@ var symbols = {
          id: 'Text',
          text: 'Aprendizagem de Artes Visuais e TDIC',
          align: 'left',
-         rect: ['13px','441px','365px','auto','auto','auto']
+         rect: ['13px','551px','365px','auto','auto','auto']
       }]
    },
    {
@@ -4859,7 +4928,7 @@ var symbols = {
    states: {
       "Base State": {
          "${_TextCopy4}": [
-            ["style", "top", '189px'],
+            ["style", "top", '299px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4867,7 +4936,7 @@ var symbols = {
             ["style", "width", '373px']
          ],
          "${_TextCopy3}": [
-            ["style", "top", '533px'],
+            ["style", "top", '643px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4875,7 +4944,7 @@ var symbols = {
             ["style", "width", '365px']
          ],
          "${_TextCopy5}": [
-            ["style", "top", '119px'],
+            ["style", "top", '229px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4892,17 +4961,17 @@ var symbols = {
          "${_content}": [
             ["color", "background-color", 'rgba(135,180,219,0)'],
             ["style", "overflow", 'hidden'],
-            ["style", "height", '188px'],
+            ["style", "height", '169px'],
             ["style", "top", '8px'],
             ["style", "left", '-42px'],
             ["style", "width", '458px']
          ],
          "${symbolSelector}": [
-            ["style", "height", '211px'],
-            ["style", "width", '434px']
+            ["style", "height", '186px'],
+            ["style", "width", '424px']
          ],
          "${_TextCopy}": [
-            ["style", "top", '369px'],
+            ["style", "top", '479px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4910,7 +4979,7 @@ var symbols = {
             ["style", "width", '365px']
          ],
          "${_Text}": [
-            ["style", "top", '441px'],
+            ["style", "top", '551px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4918,7 +4987,7 @@ var symbols = {
             ["style", "width", '365px']
          ],
          "${_TextCopy2}": [
-            ["style", "top", '279px'],
+            ["style", "top", '389px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -4943,7 +5012,7 @@ var symbols = {
             ["style", "width", '24px']
          ],
          "${_TextCopy6}": [
-            ["style", "top", '89px'],
+            ["style", "top", '104px'],
             ["style", "font-family", 'raleway, sans-serif'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
@@ -5164,84 +5233,84 @@ var symbols = {
       fill: ['rgba(135,180,219,0.00)'],
       c: [
       {
-         font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal'],
          type: 'text',
+         rect: ['13px','6px','421px','162px','undefined','undefined'],
          id: 'Scrolling-ContentCopy4',
          text: '<br>Utilizar as TDIC no enfrentamento dos desafios da educação matemática hoje e trabalhar cooperativamente tendo como mediador a tecnologia e a aprendizagem da matemática.<br><br><br>Realizar leituras e produção de textos multimodais ou multissemióticos (hipermídia), além de pensar a escola como agência de letramento para a reflexão e a construção do conhecimento crítico sobre a hipermídia. <br><br><br>Trabalhar as relações entre tempo e história, a produção de memórias individuais e coletivas e as narrativas da história e suas reinvenções com os impactos tecnológicos. <br><br><br>Empregar as TDIC no processo de construção do conhecimento geográfico. E, também, a funcionalidade de recortes espaciais contemplando o trânsito entre escalas: global, regional, sub-regional e local. <br><br><br>Utilizar e a analisar criticamente os objetos digitais de aprendizagem, os simuladores virtuais disponíveis na web como facilitadores da aprendizagem e aprender a produzir e  veicular documentos em vídeo para a apropriação de saberes químicos.<br><br><br>Adquirir conhecimentos da Física e cultura científica, produção e circulação no contexto da cibercultura: papel das tecnologias da web 2.0 (blogs, wikis, youtube, tumblrs). <br><br><br>Incorporar as Tecnologias Digitais de Informação e Comunicação nos processos de ensino e de aprendizagem de Biologia, no segmento do Ensino Médio.<br><br><br>Fazer a articulação da cultura digital e do ensino-aprendizagem, além de trabalhar questões epistemológicas e metodológicas em contextos multiculturais e as TDIC e suas possibilidades de promoção de aprendizagens significativas.<br><br><br>Estudar Filosofia, sua relação com as tecnologias e a cultura e, em particular, com o universo contemporâneo da Cultura Digital, com foco na discussão relativa à cidadania digital e às suas implicações na educação.',
          align: 'justify',
-         rect: ['13px','6px','421px','162px','undefined','undefined']
+         font: ['raleway, sans-serif',12,'rgba(255,255,255,1.00)','normal','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','9px','auto','auto','auto','auto'],
          id: 'TextCopy21',
          text: 'Aprendizagem de Matemática no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','9px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','102px','auto','auto','auto','auto'],
          id: 'TextCopy20',
          text: 'Aprendizagem de Língua Portuguesa no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','102px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','190px','auto','auto','auto','auto'],
          id: 'TextCopy19',
          text: 'Aprendizagem de História no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','190px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','281px','auto','auto','auto','auto'],
          id: 'TextCopy18',
          text: 'Aprendizagem de Geografia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','281px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','370px','auto','auto','auto','auto'],
          id: 'TextCopy17',
          text: 'Aprendizagem de Química no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','370px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','478px','auto','auto','auto','auto'],
          id: 'TextCopy16',
          text: 'Aprendizagem de Física no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','478px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','569px','auto','auto','auto','auto'],
          id: 'TextCopy15',
          text: 'Aprendizagem de Biologia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','569px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','659px','auto','auto','auto','auto'],
          id: 'TextCopy14',
          text: 'Aprendizagem de Sociologia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','659px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       },
       {
-         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal'],
          type: 'text',
+         rect: ['13px','767px','auto','auto','auto','auto'],
          id: 'TextCopy13',
          text: 'Aprendizagem de Filosofia no Ensino Médio e TDIC',
          align: 'justify',
-         rect: ['13px','767px','auto','auto','auto','auto']
+         font: ['raleway, sans-serif',12,'rgba(254,192,5,1.00)','700','none','normal']
       }]
    },
    {
@@ -5292,13 +5361,6 @@ var symbols = {
             ["style", "left", '13px'],
             ["style", "font-family", 'raleway, sans-serif']
          ],
-         "${_TextCopy14}": [
-            ["style", "top", '659px'],
-            ["color", "color", 'rgba(254,192,5,1)'],
-            ["style", "font-weight", 'bold'],
-            ["style", "left", '13px'],
-            ["style", "font-family", 'raleway, sans-serif']
-         ],
          "${_content}": [
             ["color", "background-color", 'rgba(135,180,219,0)'],
             ["style", "overflow", 'hidden'],
@@ -5307,6 +5369,13 @@ var symbols = {
             ["style", "left", '-42px'],
             ["style", "width", '458px']
          ],
+         "${_TextCopy20}": [
+            ["style", "top", '102px'],
+            ["color", "color", 'rgba(254,192,5,1)'],
+            ["style", "font-weight", 'bold'],
+            ["style", "left", '13px'],
+            ["style", "font-family", 'raleway, sans-serif']
+         ],
          "${_botaoUPCopy3}": [
             ["style", "top", '8px'],
             ["style", "display", 'block'],
@@ -5314,8 +5383,8 @@ var symbols = {
             ["style", "left", '392px'],
             ["style", "width", '24px']
          ],
-         "${_TextCopy20}": [
-            ["style", "top", '102px'],
+         "${_TextCopy14}": [
+            ["style", "top", '659px'],
             ["color", "color", 'rgba(254,192,5,1)'],
             ["style", "font-weight", 'bold'],
             ["style", "left", '13px'],
@@ -5392,12 +5461,12 @@ var symbols = {
       boxShadow: ['',3,3,3,0,'rgba(0,0,0,0.65)'],
       c: [
       {
-         font: ['Arial',12,'rgba(0,0,0,1)','normal','none','normal'],
          type: 'text',
+         rect: ['9px','4px','395px','161','undefined','undefined'],
          id: 'Scrolling-Content',
          text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br><br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.<br><br>This is the END',
          align: 'auto',
-         rect: ['9px','4px','395px','161','undefined','undefined']
+         font: ['Arial',12,'rgba(0,0,0,1)','normal','none','normal']
       }]
    },
    {

@@ -96,7 +96,7 @@ $(document).ready(function(){
 	$('.bxslider').bxSlider({
 		auto: true,
 		speed: 1000,
-		pause: 12000
+		pause: 20000
 	});
 	$(window).resize(function(){
 		// $('.scroll-pane').jScrollPane();
@@ -111,6 +111,13 @@ $(document).ready(function(){
 		});
 		$(this).addClass('scroll-current');
 		$(this).text($(this).attr('data-active'));
+	});
+	$(".show").click(function(event){
+		event.preventDefault();
+		$('.scroll-current').each(function(){
+			$(this).removeClass('scroll-current');
+		});
+		$(this).addClass('scroll-current');
 	});
 	menuSetup();
 });

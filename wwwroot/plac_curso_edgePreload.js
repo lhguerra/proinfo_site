@@ -37,7 +37,7 @@ window.AdobeEdge.preloadComplete[compId]=function(a){AdobeEdge.$_(".edgePreload"
 function onDocLoaded(){window.AdobeEdge.loaded=!0;fnCycle({event:"begin"});isCapable()?(preContent&&preContent.dom&&simpleContent(preContent.dom,"edgePreload"+compId),filesToLoad&&!signaledLoading&&(loadResources(filesToLoad),filesToLoad=void 0)):dlContent&&dlContent.dom&&(loadingEvt&&loadingEvt({event:"done",progress:1,reason:"downlevel"}),simpleContent(dlContent.dom))};
 window.AdobeEdge = window.AdobeEdge || {};
 window.AdobeEdge.framework = 'jquery';
-if(document.addEventListener ){
+if(document.addEventListener ){ 
    window.addEventListener("load", onDocLoaded, false);
 } else if ( document.attachEvent ) {
    window.attachEvent("onload", onDocLoaded );
@@ -50,7 +50,7 @@ if(document.addEventListener ){
     };
 
    aLoader = [
-    // { load: "edge_includes/jquery-1.7.1.min.js"},
+    { load: "edge_includes/jquery-1.7.1.min.js"},
     { load: "edge_includes/edge.2.0.0.min.js"},
           { load: "plac_curso_edge.js"},
           { load: "plac_curso_edgeActions.js"}];

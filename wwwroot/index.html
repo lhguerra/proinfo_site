@@ -5,27 +5,36 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>HTML</title>
+	<title>Educação na Cultura Digital</title>
 
 	<!-- styles -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
 	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link media="screen and (max-width: 900px)" rel="stylesheet" type="text/css" href="css/layout.css" />
 	<style>
-	.edgeLoad-EDGE-21288881 { visibility: hidden; }
-	</style>
+    .edgeLoad-EDGE-21288881 { visibility:hidden; }
+  </style>
 
 	<!-- js -->
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="plac_curso_edgePreload.js"></script>
-	<script src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" charset="utf-8" src="plac_curso_edgePreload.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 </head>
 <body>
+
+
 	<div>
+<!-- barra do governo  -->
+<div id="barra-brasil">
+    <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+</div>
+<script src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+		
 		<aside>
 			<div id="logo">
 				<img src="images/logo.png" />
@@ -122,7 +131,7 @@
 					</p>
 					<ul id="oqueemenu">
 						<li>
-							<a id="menuproposta" class="show" href="#/">PROPOSTA</a>
+							<a id="menuproposta" class="show scroll-current" href="#/">PROPOSTA</a>
 						</li>
 						<li>
 							<a id="menumetodologia" class="show" href="#/">METODOLOGIA</a>
@@ -137,11 +146,11 @@
 							<a id="menuimplementacao" class="show" href="#/">IMPLEMENTAÇÃO</a>
 						</li>
 					</ul>
-					<iframe class="proposta display" height="300" src="http://www.youtube.com/embed/rnKzU92fOBY" frameborder="0" allowfullscreen></iframe>
+					<iframe class="proposta display" height="300" src="http://www.youtube.com/embed/VGP3xlAMXt8" frameborder="0" allowfullscreen></iframe>
 
 					<iframe class="metodologia" height="300" src="http://www.youtube.com/embed/JfaVGAp7m3E" frameborder="0" allowfullscreen></iframe>
 
-					<iframe class="inscricao" height="300" src="http://www.youtube.com/embed/Vj_fR6ILtE0" frameborder="0" allowfullscreen></iframe>
+					<iframe class="inscricao" height="300" src="http://www.youtube.com/embed/iYJkXbSs5Gc" frameborder="0" allowfullscreen></iframe>
 
 					<iframe class="estrutura" height="300" src="http://www.youtube.com/embed/bM6ypJGX-aA" frameborder="0" allowfullscreen></iframe>
 
@@ -152,7 +161,7 @@
 				<div id="proposta" class="bb">
 					<div class="box">
 						<div>
-							<h3 class="lsf-icon" title="plus">Qual é o plano?</h3>
+							<h3><img src="images/Plus-32.png" />Qual é o plano?</h3>
 							<div class="box-wrapper">
 								<p>
 									Propõe-se uma formação ancorada nas experiências e nas trocas entre professores. Isso se dará por meio de atividades práticas de uso das Tecnologias Digitais de Informação e Comunicação (TDIC) com os estudantes. Essas atividades serão acompanhadas desde o planejamento e execução até a avaliação.
@@ -160,7 +169,7 @@
 							</div>
 						</div>
 						<div class="over">
-							<h3 class="lsf-icon" title="plus">Construção do Curso:</h3>
+							<h3><img src="images/Plus-32.png" />Construção do Curso:</h3>
 							<div class="box-wrapper scroll-pane">
 								<p>
 									A autoria dos materiais didáticos do curso está se dando por meio de um processo inovador. Os materiais estão sendo desenvolvidos, desde a sua criação, de forma coletiva e colaborativa.
@@ -177,7 +186,7 @@
 				<div id="metodologia" class="bb">
 					<div class="box">
 						<div>
-							<h3 class="lsf-icon" title="plus">Como?</h3>
+							<h3><img src="images/Plus-32.png" />Como?</h3>
 							<div class="box-wrapper scroll-pane">
 								<p>
 									A metodologia do curso une a ideia de formação continuada com flexibilidade, possibilitando a organização de ciclos de formação, propiciando a cada escola que escolha o seu percurso. Dessa forma, a escola ganha autonomia e se constitui como unidade formadora, oferecendo suporte à prática coletiva.
@@ -190,7 +199,7 @@
 				<div id="inscricao" class="bb">
 					<div class="box">
 						<div>
-							<h3 class="lsf-icon" title="plus">Para quem?</h3>
+							<h3><img src="images/Plus-32.png" />Para quem?</h3>
 							<div class="box-wrapper">
 								<p>
 									O curso “Especialização em Educação na Cultura Digital” oferecerá uma formação dirigida ao coletivo da escola. O coletivo será composto por professores, profissionais de apoio e gestores locais.
@@ -198,7 +207,7 @@
 							</div>
 						</div>
 						<div class="over">
-							<h3 class="lsf-icon" title="plus">Como Participar?</h3>
+							<h3><img src="images/Plus-32.png" />Como Participar?</h3>
 							<div id="como-participar" class="box-wrapper scroll-pane">
 								<p>
 									A seleção dos cursistas demanda um processo em acordo aos princípios seguidos pelas Universidades brasileiras. As inscrições no curso, atendendo às condições expressas nos editais de seleção, serão aceitas para educadores ligados a unidades escolares.
@@ -217,7 +226,7 @@
 				<div id="estrutura" class="bb">
 					<div class="box">
 						<div>
-							<h3 class="lsf-icon" title="plus">Mais Informações:</h3>
+							<h3><img src="images/Plus-32.png" />Mais Informações:</h3>
 							<div class="box-wrapper scroll-pane">
 								<p>
 									A proposta é de uma arquitetura pedagógica organizada em núcleos de estudo modulares, podendo ser cursados de diferentes formas. Assim,  permite-se que cada escola faça seu próprio projeto de formação, atendendo ao perfil do coletivo e também de cada profissional individualmente. Para entender melhor a estrutura, saiba mais em: <a href="#como-funciona">COMO FUNCIONA?</a>
@@ -230,7 +239,7 @@
 				<div id="implementacao" class="bb">
 					<div class="box">
 						<div>
-							<h3 class="lsf-icon" title="plus">Como funciona?</h3>
+							<h3><img src="images/Plus-32.png" />Como funciona?</h3>
 							<div class="box-wrapper scroll-pane">
 								<p>
 									Com o objetivo de formar educadores para integrar de forma crítica e criativa as TDIC aos currículos escolares, o curso de Especialização em Educação na Cultura Digital estruturou a formação em três componentes principais: o Plano de Ação Coletivo, os Núcleos de Estudo e o Trabalho de Conclusão de Curso.
@@ -240,6 +249,8 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="clear"></div>
 		</section>
 
 		<section id="como-funciona">
@@ -288,10 +299,10 @@
 						<strong>Guia de Base:</strong> apresenta o modelo pedagógico do curso.
 					</p>
 					<p>
-						<strong>Guia de Diretrizes Metodológicas:</strong> apresenta o detalhamento da metodologia do Curso.
+						<strong>Guia de Autoria:</strong> apresenta a coesão desejada para a construção compartilhada dos materiais didáticos.
 					</p>
 					<p>
-						<strong>Guia de Autoria:</strong> apresenta a coesão desejada para a construção compartilhada dos materiais didáticos.
+						<strong>Guia de Diretrizes Metodológicas:</strong> apresenta o detalhamento da metodologia do Curso.
 					</p>
 					<p>
 						<strong>Guia de Implantação:</strong> apresenta a implantação e o desenvolvimento do curso nas instituições envolvidas.
@@ -302,20 +313,20 @@
 					</p>
 					<ul>
 						<li>
-							<img src="images/implantacao.jpg" /><br />
-							<a href="#download" class="lsf-icon" title="save">Download</a>
-						</li>
-						<li>
-							<img src="images/diretrizes.jpg" /><br />
-							<a href="#download" class="lsf-icon" title="save">Download</a>
-						</li>
-						<li>
 							<img src="images/base.jpg" /><br />
-							<a href="#download" class="lsf-icon" title="save">Download</a>
+							<a href="downloads/documento-base.pdf" class="lsf-icon" title="save">Download</a>
 						</li>
 						<li>
 							<img src="images/autoria.jpg" /><br />
-							<a href="#download" class="lsf-icon" title="save">Download</a>
+							<a href="downloads/guia-de-autoria.pdf" class="lsf-icon" title="save">Download</a>
+						</li>
+						<li>
+							<img src="images/diretrizes.jpg" /><br />
+							<a href="downloads/diretrizes-metodologicas.pdf" class="lsf-icon" title="save">Download</a>
+						</li>
+						<li>
+							<img src="images/implantacao.jpg" /><br />
+							<a href="downloads/guia-de-implantacao.pdf" class="lsf-icon" title="save">Download</a>
 						</li>
 					</ul>
 				</article>
@@ -329,46 +340,283 @@
 			<div class="section-wrapper">
 				<article>
 					<h2>ENVIAR MENSAGEM <span>| Escreva suas dúvidas que responderemos em breve</h2>
-					<table>
-						<tr>
-							<td>
-								<h3>Nome:</h3>
-								<input type="text" placeholder="Digite seu nome" />
-							</td>
-							<td>
-								<h3>E-mail:</h3>
-								<input type="email" placeholder="Digite seu e-mail" />
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<h3>Mensagem:</h3>
-								<textarea rows="4" cols="40" placeholder="Escreva aqui sua mensagem"></textarea>
-							</td>
-						</tr>
-					</table>
+					<div class="ss-form"><form action="https://docs.google.com/forms/d/1Des6bDm3goNSBZZb5M6u1TVqf0J5LnWxx6ftv8kPYNo/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol style="padding-left: 0">
+					<div class="ss-form-question errorbox-good">
+					<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_2102448105"><div class="ss-q-title"><!-- Nome -->
+					<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label>
+					</div>
+					<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+					<input placeholder="Nome*" type="text" name="entry.2102448105" value="" class="ss-q-short required" id="entry_2102448105" dir="auto" aria-required="true" required="" title="">
+					<div class="error-message"></div>
+
+					</div></div></div> <div class="ss-form-question errorbox-good">
+					<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1507902144"><div class="ss-q-title"><!-- e-mail -->
+					<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label>
+					</div>
+					<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+					<input placeholder="e-mail*" type="text" name="entry.1507902144" value="" class="ss-q-short" id="entry_1507902144" dir="auto" aria-required="true" required="" title="">
+					<div class="error-message"></div>
+
+					</div></div></div> <div class="ss-form-question errorbox-good">
+					<div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_765597931"><div class="ss-q-title"><!-- Mensagem -->
+					<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label>
+					</div>
+					<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+					<textarea placeholder="Mensagem*" name="entry.765597931" rows="4" cols="30" class="ss-q-long" id="entry_765597931" dir="auto" aria-required="true" required=""></textarea>
+					<div class="error-message"></div>
+
+					</div></div></div>
+					<input type="hidden" name="draftResponse" value="[]
+					">
+					<input type="hidden" name="pageHistory" value="0">
+
+
+					<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+					<input type="submit" name="submit" value="Enviar" id="ss-submit"></td>
+					</tr></tbody></table></div></ol></form></div>
 				</article>
 			</div>
 		</section>
 
-		<section id="creditos">
+		<section id="creditos" style="padding-bottom: 100px;">
 			<header>
 				<h1>CONHEÇA A EQUIPE <span>| Créditos</h1>
 			</header>
 			<div class="section-wrapper">
 				<article>
-					<img src="images/em construção 2-01.png" />
+					<div style="backgroun-color: white;">
+						<h3>MINISTÉRIO DA EDUCAÇÃO</h3>
+						<p>Secretaria de Educação Básica</p>
+
+						<h3>UNIVERSIDADE FEDERAL DE SANTA CATARINA</h3>
+						<p>Centro de Ciências da Educação (CED)</p>
+						<p>Laboratório de Novas Tecnologias (LANTEC)</p>
+
+						<h4>Coordenação Geral do Projeto:</h4>
+						<p>Roseli Zen Cerny e Edla Maria Faust Ramos</p>
+
+						<h3>EQUIPE DE CRIAÇÃO E DESENVOLVIMENTO</h3>
+
+						<h4>Comitê Gestor</h4>
+						<p>Roseli Zen Cerny</p>
+						<p>Edla Maria Faust Ramos</p>
+						<p>Elizangela Bastos Hassan</p>
+						<p>Mônica Renneberg da Silva</p>
+						<p>Carla Cristina Dutra Burigo</p>
+
+						<h4>Comitê Científico Pedagógico</h4>
+						<p>Aparecida Campos Feitosa</p>
+						<p>José Armando Valente</p>
+						<p>Kátia Morosov Alonso</p>
+						<p>Léa da Cruz Fagundes</p>
+						<p>Maria Elisabette Brisola Brito Prado</p>
+						<p>Maria Elizabeth Bianconcini Trindade Morato Pinto de Almeida</p>
+						<p>Miriam Struchiner</p>
+						<p>Rosane Aragón</p>
+						<p>Simão Pedro Marinho</p>
+						<p>Zelda Simplício de Sales Caldas</p>
+
+						<h3>Autoria dos Materiais</h3>
+
+						<h4>Plano de Ação Coletivo</h4>
+						<p>
+							Maria Elisabette Brisola Brito Prado, Miriam Struchiner, Rosane Aragón, Carla Cristina Dutra Búrigo.
+						</p>
+
+						<h4>Núcleos de Base I e II</h4>
+						<p>
+							Maria Elizabeth Bianconcini Trindade Morato Pinto de Almeida, José Armando Valente.
+						</p>
+
+						<h4>Formação de Educadores na Cultura Digital</h4>
+						<p>
+							Edla Maria Faust Ramos, Lia Cristina Barata Cavellucci, Roseli Zen Cerny, Célia Reichert Engelmann.
+						</p>
+
+						<h4>Gestão</h4>
+						<p>
+							Maria Elizabeth Bianconcini Trindade Morato Pinto de Almeida, Maria Elisabette Brisola Brito Prado.
+						</p>
+
+						<h4>Tecnologias Assistivas</h4>
+						<p>
+							Liliana Maria Passerino, Patrícia Maria Vargas de Lima.
+						</p>
+
+						<h4>A Prática Docente na  Educação Infantil e TDIC</h4>
+						<p>
+							Patrícia de Moraes Lima, Ivana Martins da Rosa.
+						</p>
+
+						<h4>A Prática Docente no Ensino Fundamental I e TDIC</h4>
+						<p>
+							Darli Collares, Nina Rosa Ventimiglia Xavier.
+						</p>
+
+						<h4>Educação Física e TDIC</h4>
+						<p>
+							Giovani De Lorenzi Pires, Juliano Silveira.
+						</p>
+
+						<h4>Aprendizagem de Artes Visuais e TDIC</h4>
+						<p>
+							Maria Cristina da Rosa Fonseca da Silva, Patrícia Maria Macedo Alves, Jaymini Pravinchandra Shah.
+						</p>
+
+						<h4>Aprendizagem de Lingua Estrangeira e TDIC</h4>
+						<p>
+							Celso Henrique Soufen Tumolo, Nadia Karina Ruhmke Ramos, Juliana Cristina Faggion Bergmann, Fabíola Teixeira Ferreira.
+						</p>
+
+						<h4>Aprendizagem de Matemática no Ensino Fundamental e TDIC</h4>
+						<p>
+							Márcia Rodrigues Notare Meneghetti, Marcus Vinicius de Azevedo Basso, Crediné Silva de Menezes, Fabiana Fattore Serres, Elisa Friedrich Martins.
+						</p>
+
+						<h4>Aprendizagem de Língua Portuguesa no Ensino Fundamental e TDIC</h4>
+						<p>
+							Jacqueline Peixoto Barbosa, Eduardo de Moura Almeida, Nayara Moreira Santos, Amanda Lacerda de Lacerda.
+						</p>
+
+						<h4>Aprendizagem de História no Ensino Fundamental e TDIC</h4>
+						<p>
+							Carla Ferretti Santiago, Eucídio Arruda, Fernanda Dinardo.
+						</p>
+
+						<h4>Aprendizagem de Geografia no Ensino Fundamental e TDIC</h4>
+						<p>
+							Rosa Elisabete Militz Wypyczynski Martins, Roberto Ribeiro.
+						</p>
+
+						<h4>Aprendizagem de Ciências no Ensino Fundamental e TDIC</h4>
+						<p>
+							Marina Bazzo, Gabriela de Leon Nóbrega Reses, Patrícia Barbosa Pereira, Ivan Tavares Scotelari de Souza.
+						</p>
+
+						<h4>Aprendizagem de Matemática no Ensino Médio e TDIC</h4>
+						<p>
+							Marcus Vinicius de Azevedo Basso, Márcia Rodrigues Notare Meneghetti, Crediné Silva de Menezes, Elisa Friedrich Martins, Fabiana Fattore Serres.
+						</p>
+
+						<h4>Aprendizagem de Língua Portuguesa no Ensino Médio e TDIC</h4>
+						<p>
+							Roxane Helena Rodrigues Rojo, Saulo da Silva Oliveira.
+						</p>
+
+						<h4>Aprendizagem de Química no Ensino Médio e TDIC</h4>
+						<p>
+							Edson Luiz Lindner, Victor João da Rocha Maia Santos, Gabriela da Fontoura Rodrigues Selmi.
+						</p>
+
+						<h4>Aprendizagem de Física no Ensino Médio e TDIC</h4>
+						<p>
+							Henrique César da Silva, Patrick de Souza Girelli, Rafaela Rejane Samagaia, Fernando da Silva Calsavara, Patrick de Souza Girelli.
+						</p>
+
+						<h4>Aprendizagem de Biologia no Ensino Médio e TDIC</h4>
+						<p>
+							Simão Pedro Pinto Marinho, Alessandra Marinho.
+						</p>
+
+						<h4>Aprendizagem de Sociologia no Ensino Médio e TDIC</h4>
+						<p>
+							Paulo Peixoto de Alburquerque, Marta Campos de Quadros, Luísa Hoffmann Netto.
+						</p>
+
+						<h4>Aprendizagem de Filosofia e TDIC</h4>
+						<p>
+							Sérgio Paulino Abranches, Junot Cornélio Matos, Maria Alice Corrêa de Araújo, Willamis Aprígio de Araújo, Eugênio Pacelle da Costa Cavalcante, Guilherme Jordão Macêdo Dias.
+						</p>
+
+						<h4>Aprendizagem de História no Ensino Médio e TDIC</h4>
+						<p>
+							José Alves de Freitas Neto, José Antônio Ferreira da Silva Junior.
+						</p>
+
+						<h4>Aprendizagem de Geografia no Ensino Médio e TDIC</h4>
+						<p>
+							Cláudio Benito Oliveira Ferraz.
+						</p>
+
+						<h4>Linguagens do Nosso Tempo</h4>
+						<p>
+							Maria Lucia Santaella Braga, Alexandre Santaella Braga.
+						</p>
+
+						<h4>Tecnologias Digitais no Letramento Estatístico</h4>
+						<p>
+							Ruy César Pietropaolo, Nielce Meneguello Lobo da Costa  
+ Co-autoria Escola, Rosangela de Souza Jorge Ando.
+						</p>
+
+						<h4>Jogos Digitais e Aprendizagem</h4>
+						<p>
+							Isa Beatriz da Cruz Neves, Patrícia Rocha Rodrigues, Isa de Jesus Coutinho, Andersen Caribé de Oliveira.
+						</p>
+
+						<h4>Ética na Cultura Digital</h4>
+						<p>
+							Sérgio Paulino Abranches, Junot Cornélio Matos, Karla Epiphania Lins de Gois, Luis Lucas Dantas da Silva, Nilton Guimarães da Silva.
+						</p>
+
+						<h4>Supervisão Geral:</h4>
+						<p>Mônica Renneberg da Silva</p>
+
+						<h4>Equipe Administrativo/financeiro</h4>
+						<p>Claudia Roberta Minati</p>
+						<p>Silvia Nella Istre</p>
+
+						<h4>Supervisão da Equipe de Designers Educionais:</h4>
+						<p>Marilisa Bialvo Hoffman</p>
+						<h4>Equipe de Designers Educacionais:</h4>
+						<p>Ana Paula Knaul, Bruno Simões, Patrícia Barbosa Pereria, Gabriela Hessmann, Cintia Lima Crescêncio, Marinilse Netto, Eliandra Moraes Pires, Laura Quinones Neira, Andressa da Costa Farias, Ana Paula Gorri, Roberto Souza Ribeiro, Ivani Voos, Carin Perske, Jorge Minella.</p>
+
+						<h4>Supervisão da Equipe de Produção de Hipermídias:</h4>
+						<p>Francisco Fernandes Soares Neto</p>
+						<h4>Equipe de Produção de Hipermídias:</h4>
+						<p>Bethsey Benites C. da Rosa, Beatriz de Souza Glória, Isaque Elias, Luís Felipe Coli de Souza, Violeta Ferlauto, Fernando Tomé, Alexandre Oliveira, Emily Biasi, Marcelo Rubens Raullino.</p>
+						<h4>Programadores:</h4>
+						<p>Andréa Bonette Ferrari, João Filipe Dalla Rosa, Luiz Henrique Guerra, Ricardo Walter Hidebrand, Vinicios Camello.</p>
+
+						<h4>Supervisão da Equipe de Vídeo:</h4>
+						<p>Guilherme Espíndola Machado, Luiz Roberto Carvalho.</p>
+						<h4>Equipe de Vídeo:</h4>
+						<p>Douglas Hoose, Guilherme Pozzibon, Guilherme Vasconcelos, Lucas Eastman, Fernando Scharp Jeller, Karina Bez Batti, Gabriel Ornellas, Carlos Lenine, Maria Fernanda Bin Pacheco, Julia Beatriz Corrêa Machado.</p>
+
+						<h4>Supervisão de Fluxos de Conteúdos:</h4>
+						<p>Jaqueline de Ávila</p>
+
+						<h4>Assessora de Comunicação:</h4>
+						<p>Renata Gordo</p>
+
+						<h4>Revisão Textual e Ortográfica:</h4>
+						<p>Jaqueline Tartari</p>
+
+						<h3>SITE</h3>
+
+						<h4>Concepção</h4>
+						<p>Beatriz de Souza Glória, Rayssa Esther, Jaqueline de Ávila, Luiz Henrique Guerra, Renata Gordo, Mônica Renneberg da Silva, Francisco Fernandes Soares Neto.</p>
+
+						<h4>Conteúdo</h4>
+						<p>Renata Gordo</p>
+
+						<h4>Layout</h4>
+						<p>Beatriz de Souza Glória, Rayssa Esther.</p>
+
+						<h4>Programação</h4>
+						<p>Luiz Henrique Guerra</p>
+					</div>
 				</article>
 			</div>
 		</section>
 
 		<footer>
 			<h4>Realização:</h4>
-			<a href="http://www.mec.gov.br/">
+			<a target="blank" href="http://www.mec.gov.br/">
 				<img alt="" src="images/mec.png" />
 			</a>
-
-			<a class="scroll" href="#creditos">
+			
+			<a target="blank" class="scroll" href="#creditos">
 				<img src="images/equipe.png" />
 				<p>Conheça a Equipe</p>
 			</a>

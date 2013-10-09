@@ -1,0 +1,50 @@
+#o-que-e {
+	height: auto;
+}
+
+	#o-que-e .section-wrapper {
+		padding-bottom: 70%;
+	}
+
+	#o-que-e article {
+		position: static;
+		padding: 20px;
+	}
+
+	.bb {
+		background: white;
+		height: calc(60%);
+		height: -moz-calc(60%);
+		height: -o-calc(60%);
+		height: -webkit-calc(60%);
+		height: -ms-calc(60%);
+		right: 0;
+		padding: 0 20px;
+	}
+
+		.box {
+			width: 100%;
+		}
+
+		.over .box-wrapper {
+			position: static !important;
+		}
+
+		#como-participar {
+			margin-top: 0;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+#como-funciona article {
+		position: absolute;
+		padding: 20px;
+		right: 0;
+		left: 0;
+	}
+
+.side-img {
+	display: none;
+}

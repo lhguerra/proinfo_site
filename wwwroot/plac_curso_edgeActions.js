@@ -234,6 +234,41 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${_BOTAOCOMECOCopy}", "click", function(sym, e) {
+         sym.play("ne2");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_BOTAOCOMECOCopy2}", "click", function(sym, e) {
+         sym.play("nb1");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_BOTAOCOMECOCopy3}", "click", function(sym, e) {
+         sym.play("nb2");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_BOTAOCOMECOCopy4}", "click", function(sym, e) {
+         sym.play("tcc");
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_BOTAOCOMECOCopy5}", "click", function(sym, e) {
+         sym.play("na");
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
